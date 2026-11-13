@@ -2,34 +2,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Pavi Solutions | Digital Marketing & E-commerce Agency</title>
 
-<meta name="description" content="Pavi Solutions provides Amazon, eBay, TikTok Shop, Temu, SEO, PPC, social media marketing and professional e-commerce services for businesses in the UK, Ireland and Canada.">
+<meta name="description" content="Pavi Solutions provides professional digital marketing, Amazon, eBay, TikTok Shop, Temu, SEO, PPC, social media and e-commerce services for businesses in the UK, Ireland and Canada.">
 
 <meta name="author" content="Hematharan Piraiyzhahan">
 <meta name="theme-color" content="#080d16">
 
 <meta property="og:title" content="Pavi Solutions | Digital Growth Agency">
-<meta property="og:description" content="Build your brand. Grow your business with Pavi Solutions.">
+<meta property="og:description" content="Your trusted partner for digital marketing, e-commerce and business growth.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://piraiyz2004.github.io/nexway-solutions/">
+
+<link rel="canonical" href="https://piraiyz2004.github.io/nexway-solutions/">
 
 <style>
 
-/* ===================================
-   PAVI SOLUTIONS PREMIUM V2.1
-=================================== */
+/* ==========================================
+   PAVI SOLUTIONS - FINAL PREMIUM WEBSITE
+   VERSION 3.0
+========================================== */
 
 :root {
   --bg: #080d16;
   --panel: #101b2b;
+  --panel-light: #152438;
   --blue: #83c8ff;
+  --blue-dark: #3999ed;
   --white: #f8fafc;
   --muted: #a8b8cb;
   --border: rgba(131,200,255,.18);
   --green: #25d366;
+  --radius: 20px;
 }
 
 * {
@@ -64,6 +72,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .wrap {
   width: min(1200px, 92%);
   margin: auto;
@@ -87,7 +100,7 @@ section {
 }
 
 h1 {
-  font-size: clamp(45px, 7vw, 85px);
+  font-size: clamp(44px, 7vw, 85px);
   line-height: 1.08;
   letter-spacing: -3px;
   margin-bottom: 25px;
@@ -106,10 +119,19 @@ h3 {
 }
 
 .section-intro {
-  max-width: 730px;
+  max-width: 750px;
   color: var(--muted);
   font-size: 16px;
 }
+
+:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 5px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
 
 .btn {
   display: inline-flex;
@@ -123,9 +145,10 @@ h3 {
   border-radius: 10px;
   font-size: 14px;
   font-weight: 800;
-  transition: transform .25s ease,
-              box-shadow .25s ease,
-              background .25s ease;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
 }
 
 .btn:hover {
@@ -164,14 +187,9 @@ h3 {
   margin-top: 30px;
 }
 
-:focus-visible {
-  outline: 3px solid var(--blue);
-  outline-offset: 5px;
-}
-
-/* ===================================
-   HEADER & ANIMATED NAVIGATION
-=================================== */
+/* ==========================================
+   HEADER & NAVIGATION
+========================================== */
 
 header {
   position: sticky;
@@ -187,7 +205,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 25px;
+  gap: 22px;
 }
 
 .logo {
@@ -219,7 +237,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  gap: 19px;
+  gap: 17px;
 }
 
 nav a {
@@ -272,16 +290,18 @@ nav a.active::after {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg,#3999ed,#83c8ff);
+  background: linear-gradient(
+    90deg,#3999ed,#83c8ff
+  );
   transform: scaleX(0);
   transform-origin: left;
   z-index: 2000;
   pointer-events: none;
 }
 
-/* ===================================
-   HERO SECTION
-=================================== */
+/* ==========================================
+   HERO
+========================================== */
 
 .hero {
   position: relative;
@@ -295,7 +315,9 @@ nav a.active::after {
       #183c61 0%,
       transparent 48%
     ),
-    linear-gradient(135deg,#0e1725,#080d16);
+    linear-gradient(
+      135deg,#0e1725,#080d16
+    );
 }
 
 .hero-grid {
@@ -336,7 +358,9 @@ nav a.active::after {
 
 .hero-visual {
   padding: 30px;
-  background: linear-gradient(145deg,#1a304a,#0c1523);
+  background: linear-gradient(
+    145deg,#1a304a,#0c1523
+  );
   border: 1px solid #83c8ff45;
   border-radius: 30px;
   box-shadow: 0 30px 80px #0005;
@@ -365,8 +389,9 @@ nav a.active::after {
   border-radius: 13px;
   padding: 15px;
   margin-top: 12px;
-  transition: transform .3s ease,
-              border-color .3s ease;
+  transition:
+    transform .3s ease,
+    border-color .3s ease;
 }
 
 .visual-row:hover {
@@ -415,9 +440,9 @@ nav a.active::after {
   background: #83c8ff18;
 }
 
-/* ===================================
+/* ==========================================
    PREMIUM CARDS
-=================================== */
+========================================== */
 
 .grid-3 {
   display: grid;
@@ -428,13 +453,16 @@ nav a.active::after {
 
 .card {
   position: relative;
-  background: linear-gradient(145deg,#142238,#0e1827);
+  background: linear-gradient(
+    145deg,#142238,#0e1827
+  );
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: var(--radius);
   padding: 28px;
-  transition: transform .3s ease,
-              border-color .3s ease,
-              box-shadow .3s ease;
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
 }
 
 .card:hover {
@@ -472,9 +500,9 @@ nav a.active::after {
   margin-bottom: 20px;
 }
 
-/* ===================================
+/* ==========================================
    SERVICES
-=================================== */
+========================================== */
 
 .service-card {
   display: flex;
@@ -498,9 +526,9 @@ nav a.active::after {
   color: white;
 }
 
-/* ===================================
+/* ==========================================
    INTERNATIONAL MARKETS
-=================================== */
+========================================== */
 
 .markets {
   background: #0d1725;
@@ -517,21 +545,24 @@ nav a.active::after {
   font-size: 60px;
   display: block;
   margin-bottom: 12px;
+  transition: transform .3s ease;
+}
+
+.market-card:hover .flag {
+  transform: scale(1.1);
 }
 
 .market-card h3 {
   font-size: 24px;
 }
 
-/* ONE-TIME SERVICES */
-
 .solutions {
   background: #0c1522;
 }
 
-/* ===================================
-   MY SKILLS
-=================================== */
+/* ==========================================
+   MY SKILLS - TOP 8
+========================================== */
 
 .skills {
   background:
@@ -577,9 +608,9 @@ nav a.active::after {
   width: 100%;
 }
 
-/* ===================================
-   WORKING EXPERIENCE
-=================================== */
+/* ==========================================
+   WORKING EXPERIENCE TIMELINE
+========================================== */
 
 .experience {
   background: #080d16;
@@ -599,18 +630,23 @@ nav a.active::after {
   bottom: 15px;
   left: 9px;
   width: 2px;
-  background: linear-gradient(#83c8ff,#1b426a);
+  background: linear-gradient(
+    #83c8ff,#1b426a
+  );
 }
 
 .job {
   position: relative;
-  background: linear-gradient(135deg,#142238,#0e1725);
+  background: linear-gradient(
+    135deg,#142238,#0e1725
+  );
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 30px;
   margin-bottom: 25px;
-  transition: border-color .3s ease,
-              box-shadow .3s ease;
+  transition:
+    border-color .3s ease,
+    box-shadow .3s ease;
 }
 
 .job:hover {
@@ -676,16 +712,12 @@ nav a.active::after {
   color: #c8d8e8;
 }
 
-<!-- ===================================
-     PAVI SOLUTIONS
-     PROJECTS & INTERNATIONAL OFFICES
-=================================== -->
+/* ==========================================
+   NEW: PROJECTS & PAYMENT ASSURANCE
+========================================== */
 
-<style>
-
-.pavi-trust-section {
+.trust-section {
   position: relative;
-  padding: 90px 0;
   overflow: hidden;
   background:
     radial-gradient(
@@ -694,82 +726,51 @@ nav a.active::after {
       transparent 50%
     ),
     #080d16;
-  border-top: 1px solid #83c8ff25;
-  border-bottom: 1px solid #83c8ff25;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
-.pavi-trust-heading {
+.trust-heading {
   text-align: center;
   max-width: 850px;
   margin: 0 auto 45px;
 }
 
-.pavi-trust-heading h2 {
-  font-size: clamp(32px, 5vw, 52px);
-  color: #ffffff;
+.trust-heading p {
+  color: var(--muted);
 }
 
-.pavi-trust-heading p {
-  color: #a8b8cb;
-}
-
-/* PROJECT ACHIEVEMENT CARDS */
-
-.pavi-stats-grid {
+.stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 22px;
   max-width: 900px;
   margin: 0 auto 40px;
 }
 
-.pavi-stat-card {
-  position: relative;
-  overflow: hidden;
-  padding: 35px 25px;
-  border-radius: 22px;
-  border: 1px solid #83c8ff35;
-  background: linear-gradient(
-    145deg,
-    #192d46,
-    #101a29
-  );
+.stat-card {
   text-align: center;
-  transition:
-    transform .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
+  padding: 35px 25px;
+  background: linear-gradient(
+    145deg,#192d46,#101a29
+  );
 }
 
-.pavi-stat-card:hover {
-  transform: translateY(-7px);
-  border-color: #83c8ff;
-  box-shadow: 0 15px 40px #0005;
-}
-
-.pavi-stat-number {
+.stat-number {
   display: block;
-  color: #83c8ff;
-  font-size: clamp(45px, 7vw, 75px);
+  color: var(--blue);
+  font-size: clamp(42px,7vw,75px);
   font-weight: 900;
   line-height: 1.2;
   text-shadow: 0 0 25px #83c8ff40;
 }
 
-.pavi-stat-card h3 {
+.stat-card h3 {
   font-size: 22px;
   margin: 12px 0;
-  color: white;
 }
 
-.pavi-stat-card p {
-  font-size: 14px;
-  color: #a8b8cb;
-}
-
-/* PAYMENT ASSURANCE BOX */
-
-.pavi-payment-box {
+.payment-box {
   position: relative;
   overflow: hidden;
   padding: 45px;
@@ -778,21 +779,18 @@ nav a.active::after {
   border-radius: 28px;
   border: 1px solid #83c8ff60;
   background: linear-gradient(
-    135deg,
-    #193451,
-    #101b2b,
-    #0b1421
+    135deg,#193451,#101b2b,#0b1421
   );
   box-shadow: 0 20px 70px #0005;
 }
 
-/* ANIMATED SHINE EFFECT */
+/* Animated Blue Shine */
 
-.pavi-payment-box::before {
+.payment-box::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 60%;
   height: 2px;
   background: linear-gradient(
@@ -801,29 +799,29 @@ nav a.active::after {
     #83c8ff,
     transparent
   );
-  animation: paviShine 5s linear infinite;
+  transform: translateX(-110%);
+  animation: paymentShine 5s linear infinite;
   pointer-events: none;
 }
 
-@keyframes paviShine {
+@keyframes paymentShine {
   0% {
-    left: -60%;
+    transform: translateX(-110%);
   }
   100% {
-    left: 120%;
+    transform: translateX(280%);
   }
 }
 
-.pavi-payment-title {
+.payment-title {
   text-align: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
 }
 
-.pavi-shield {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.shield-icon {
+  display: inline-grid;
+  place-items: center;
   width: 75px;
   height: 75px;
   border-radius: 22px;
@@ -831,11 +829,11 @@ nav a.active::after {
   border: 1px solid #83c8ff50;
   font-size: 35px;
   margin-bottom: 20px;
-  animation: paviShieldGlow 3s ease-in-out infinite;
+  animation: shieldGlow 3s ease-in-out infinite;
 }
 
-@keyframes paviShieldGlow {
-  0%, 100% {
+@keyframes shieldGlow {
+  0%,100% {
     box-shadow: 0 0 10px #83c8ff15;
   }
   50% {
@@ -843,88 +841,59 @@ nav a.active::after {
   }
 }
 
-.pavi-payment-title h2 {
-  color: white;
-  font-size: clamp(30px, 4vw, 45px);
-}
-
-.pavi-payment-headline {
-  color: #83c8ff;
-  font-size: clamp(22px, 3vw, 32px);
+.payment-headline {
+  color: var(--blue);
+  font-size: clamp(23px,3.5vw,34px);
   font-weight: 800;
   line-height: 1.4;
   margin: 20px 0;
 }
 
-.pavi-payment-title p {
+.payment-title p {
   color: #b8c8da;
   font-size: 16px;
 }
 
-/* INTERNATIONAL OFFICE CARDS */
-
-.pavi-office-grid {
+.office-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2,1fr);
   gap: 25px;
   margin-top: 40px;
 }
 
-.pavi-office-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 22px;
-  padding: 35px 25px;
+.office-card {
   text-align: center;
-  border: 1px solid #83c8ff35;
+  padding: 35px 25px;
   background: linear-gradient(
-    145deg,
-    #1b3550,
-    #0c1828
+    145deg,#1b3550,#0c1828
   );
-  transition:
-    transform .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
 }
 
-.pavi-office-card:hover {
-  transform: translateY(-7px);
-  border-color: #83c8ff;
-  box-shadow: 0 15px 35px #83c8ff15;
-}
-
-.pavi-office-flag {
+.office-flag {
   display: block;
   font-size: 65px;
   margin-bottom: 15px;
   transition: transform .35s ease;
 }
 
-.pavi-office-card:hover .pavi-office-flag {
-  transform: scale(1.1);
+.office-card:hover .office-flag {
+  transform: scale(1.12);
 }
 
-.pavi-office-label {
-  color: #83c8ff;
+.office-label {
+  color: var(--blue);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
-.pavi-office-card h3 {
+.office-card h3 {
   font-size: 30px;
-  color: white;
   margin: 12px 0 5px;
 }
 
-.pavi-office-card p {
-  color: #a8b8cb;
-  font-size: 15px;
-}
-
-.pavi-office-status {
+.office-status {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -933,21 +902,20 @@ nav a.active::after {
   border-radius: 30px;
   border: 1px solid #83c8ff30;
   background: #83c8ff10;
-  color: #83c8ff;
+  color: var(--blue);
   font-size: 11px;
   font-weight: 700;
 }
 
-.pavi-office-dot {
+.office-dot {
   width: 7px;
   height: 7px;
-  background: #83c8ff;
+  background: var(--blue);
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
-/* DISCLAIMER */
-
-.pavi-payment-disclaimer {
+.payment-disclaimer {
   margin-top: 35px;
   padding: 22px;
   background: #ffffff06;
@@ -955,493 +923,21 @@ nav a.active::after {
   border-radius: 14px;
 }
 
-.pavi-payment-disclaimer h4 {
-  color: #83c8ff;
+.payment-disclaimer h4 {
+  color: var(--blue);
   font-size: 14px;
   margin-bottom: 8px;
 }
 
-.pavi-payment-disclaimer p {
-  color: #a8b8cb;
+.payment-disclaimer p {
+  color: var(--muted);
   font-size: 13px;
   line-height: 1.8;
 }
 
-/* WHATSAPP CTA */
-
-.pavi-payment-cta {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.pavi-payment-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 25px;
-  border-radius: 12px;
-  background: #25d366;
-  color: #072b16;
-  font-weight: 800;
-  text-decoration: none;
-  transition:
-    transform .3s ease,
-    box-shadow .3s ease;
-}
-
-.pavi-payment-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px #25d36630;
-}
-
-/* SMOOTH ENTRANCE ANIMATION */
-
-.pavi-trust-animate {
-  opacity: 0;
-  transform: translateY(25px);
-  transition:
-    opacity .7s ease,
-    transform .7s ease;
-}
-
-.pavi-trust-animate.pavi-show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.pavi-stat-card.pavi-show:hover,
-.pavi-office-card.pavi-show:hover {
-  transform: translateY(-7px);
-}
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 650px) {
-
-  .pavi-trust-section {
-    padding: 60px 0;
-  }
-
-  .pavi-stats-grid {
-    gap: 12px;
-  }
-
-  .pavi-stat-card {
-    padding: 25px 12px;
-  }
-
-  .pavi-stat-card h3 {
-    font-size: 17px;
-  }
-
-  .pavi-stat-card p {
-    font-size: 12px;
-  }
-
-  .pavi-payment-box {
-    padding: 25px 18px;
-  }
-
-  .pavi-office-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .pavi-office-card {
-    padding: 28px 20px;
-  }
-
-  .pavi-office-flag {
-    font-size: 55px;
-  }
-
-}
-
-/* REDUCED MOTION SUPPORT */
-
-@media (prefers-reduced-motion: reduce) {
-
-  .pavi-payment-box::before,
-  .pavi-shield {
-    animation: none !important;
-  }
-
-  .pavi-trust-animate {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-  }
-
-  .pavi-stat-card,
-  .pavi-office-card,
-  .pavi-office-flag,
-  .pavi-payment-button {
-    transition: none !important;
-  }
-
-}
-
-</style>
-
-<section class="pavi-trust-section"
-         id="achievements">
-
-  <div class="wrap">
-
-    <!-- SECTION HEADING -->
-
-    <div class="pavi-trust-heading">
-
-      <div class="eyebrow">
-        Our Experience & Customer Trust
-      </div>
-
-      <h2>
-        Experience. Trust.
-        <span class="accent">Results.</span>
-      </h2>
-
-      <p>
-        Professional digital solutions with
-        flexible international payment options.
-      </p>
-
-    </div>
-
-    <!-- PROJECTS AND EXPERIENCE -->
-
-    <div class="pavi-stats-grid">
-
-      <article class="pavi-stat-card">
-
-        <span class="pavi-stat-number"
-              data-pavi-count="12">
-          12
-        </span>
-
-        <h3>Projects Worked On</h3>
-
-        <p>
-          Digital Marketing, E-commerce,
-          Branding & Marketplace Management
-        </p>
-
-      </article>
-
-      <article class="pavi-stat-card">
-
-        <span class="pavi-stat-number">
-          <span data-pavi-count="3">3</span>
-          Years
-        </span>
-
-        <h3>Industry Experience</h3>
-
-        <p>
-          Professional Experience in
-          Digital Marketing & E-commerce
-        </p>
-
-      </article>
-
-    </div>
-
-    <!-- PAYMENT ASSURANCE -->
-
-    <div class="pavi-payment-box">
-
-      <div class="pavi-payment-title">
-
-        <div class="pavi-shield">
-          🛡️
-        </div>
-
-        <div class="eyebrow">
-          Secure & Flexible Payment
-        </div>
-
-        <h2>
-          Your Trust.
-          <span class="accent">
-            Our Priority.
-          </span>
-        </h2>
-
-        <div class="pavi-payment-headline">
-
-          Pay at Our UK or Canada Office
-          After Project Completion
-
-        </div>
-
-        <p>
-          If you are based in the United Kingdom
-          or Canada, you can review your completed
-          project and make your payment at our
-          UK or Canada office, under the agreed
-          project and payment terms.
-        </p>
-
-      </div>
-
-      <!-- INTERNATIONAL OFFICES -->
-
-      <div class="pavi-office-grid">
-
-        <!-- UNITED KINGDOM OFFICE -->
-
-        <article class="pavi-office-card">
-
-          <span class="pavi-office-flag">
-            🇬🇧
-          </span>
-
-          <div class="pavi-office-label">
-            United Kingdom Office
-          </div>
-
-          <h3>Stevenage</h3>
-
-          <p>
-            Hertfordshire, United Kingdom
-          </p>
-
-          <div class="pavi-office-status">
-
-            <span class="pavi-office-dot"></span>
-
-            In-Person Payment Available
-            by Appointment
-
-          </div>
-
-        </article>
-
-        <!-- CANADA OFFICE -->
-
-        <article class="pavi-office-card">
-
-          <span class="pavi-office-flag">
-            🇨🇦
-          </span>
-
-          <div class="pavi-office-label">
-            Canada Office
-          </div>
-
-          <h3>Ontario</h3>
-
-          <p>
-            Ontario, Canada
-          </p>
-
-          <div class="pavi-office-status">
-
-            <span class="pavi-office-dot"></span>
-
-            In-Person Payment Available
-            by Appointment
-
-          </div>
-
-        </article>
-
-      </div>
-
-      <!-- PROFESSIONAL DISCLAIMER -->
-
-      <div class="pavi-payment-disclaimer">
-
-        <h4>
-          Payment Terms & Conditions
-        </h4>
-
-        <p>
-          Post-completion payment is available
-          for eligible projects under agreed
-          terms. Project scope, pricing and
-          delivery timelines will be confirmed
-          before work begins. Third-party
-          advertising budgets, platform fees
-          and external service costs may
-          require advance payment. Office
-          visits and in-person payments must
-          be arranged in advance.
-        </p>
-
-      </div>
-
-      <!-- WHATSAPP BUTTON -->
-
-      <div class="pavi-payment-cta">
-
-        <a class="pavi-payment-button"
-           href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20project%20and%20your%20UK%20or%20Canada%20payment%20options."
-           target="_blank"
-           rel="noopener noreferrer">
-
-          Discuss Your Project on WhatsApp ↗
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ANIMATION SCRIPT -->
-
-<script>
-
-(function () {
-
-  const section =
-    document.getElementById("achievements");
-
-  if (!section) return;
-
-  const reducedMotion =
-    window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-  if (
-    reducedMotion ||
-    !("IntersectionObserver" in window)
-  ) {
-    return;
-  }
-
-  /* SMOOTH SCROLL REVEAL */
-
-  const items = section.querySelectorAll(
-    ".pavi-trust-heading, " +
-    ".pavi-stat-card, " +
-    ".pavi-payment-box, " +
-    ".pavi-office-card"
-  );
-
-  const observer = new IntersectionObserver(
-    function (entries) {
-
-      entries.forEach(function (entry) {
-
-        if (entry.isIntersecting) {
-
-          entry.target.classList.add(
-            "pavi-show"
-          );
-
-          observer.unobserve(
-            entry.target
-          );
-
-        }
-
-      });
-
-    },
-    { threshold: 0.05 }
-  );
-
-  items.forEach(function (item) {
-
-    item.classList.add(
-      "pavi-trust-animate"
-    );
-
-    observer.observe(item);
-
-  });
-
-  /* ANIMATED NUMBER COUNTERS */
-
-  const counters =
-    section.querySelectorAll(
-      "[data-pavi-count]"
-    );
-
-  const countObserver =
-    new IntersectionObserver(
-      function (entries) {
-
-        entries.forEach(function (entry) {
-
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          const counter = entry.target;
-
-          const target = Number(
-            counter.dataset.paviCount
-          );
-
-          const duration = 1200;
-
-          let startTime = null;
-
-          function animateCount(time) {
-
-            if (startTime === null) {
-              startTime = time;
-            }
-
-            const progress = Math.min(
-              (time - startTime) / duration,
-              1
-            );
-
-            const eased =
-              1 - Math.pow(1 - progress, 3);
-
-            counter.textContent =
-              Math.floor(target * eased);
-
-            if (progress < 1) {
-
-              requestAnimationFrame(
-                animateCount
-              );
-
-            } else {
-
-              counter.textContent = target;
-
-            }
-
-          }
-
-          requestAnimationFrame(
-            animateCount
-          );
-
-          countObserver.unobserve(counter);
-
-        });
-
-      },
-      { threshold: 0.4 }
-    );
-
-  counters.forEach(function (counter) {
-
-    countObserver.observe(counter);
-
-  });
-
-})();
-
-</script>
-
-<!-- END PROJECTS & OFFICE SECTION -->
-
-/* ===================================
+/* ==========================================
    PORTFOLIO
-=================================== */
+========================================== */
 
 .portfolio {
   background: #0c1624;
@@ -1459,7 +955,9 @@ nav a.active::after {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg,#132438,#3678ae);
+  background: linear-gradient(
+    135deg,#132438,#3678ae
+  );
   font-size: 26px;
   font-weight: 900;
   letter-spacing: -1px;
@@ -1467,11 +965,15 @@ nav a.active::after {
 }
 
 .work-card:nth-child(2) .work-art {
-  background: linear-gradient(135deg,#172033,#4c6fa1);
+  background: linear-gradient(
+    135deg,#172033,#4c6fa1
+  );
 }
 
 .work-card:nth-child(3) .work-art {
-  background: linear-gradient(135deg,#112a42,#53a9e8);
+  background: linear-gradient(
+    135deg,#112a42,#53a9e8
+  );
 }
 
 .work-card:hover .work-art {
@@ -1488,9 +990,9 @@ nav a.active::after {
   font-size: 13px;
 }
 
-/* ===================================
-   ABOUT FOUNDER
-=================================== */
+/* ==========================================
+   ABOUT & FOUNDER PROFILE
+========================================== */
 
 .about-grid {
   display: grid;
@@ -1506,25 +1008,42 @@ nav a.active::after {
 
 .founder-card {
   padding: 38px;
-  background: linear-gradient(145deg,#1c3550,#0e1a2a);
+  background: linear-gradient(
+    145deg,#1c3550,#0e1a2a
+  );
   border: 1px solid #83c8ff40;
   border-radius: 25px;
   text-align: center;
 }
 
+/* Original Profile Image */
+
 .founder-avatar {
-  width: 105px;
-  height: 105px;
+  position: relative;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
-  background: linear-gradient(135deg,#83c8ff,#397dbb);
-  color: #071522;
+  background: #183451;
+  border: 4px solid #83c8ff;
+  margin: 0 auto 22px;
+  overflow: hidden;
   display: grid;
   place-items: center;
-  font-size: 35px;
+  box-shadow: 0 0 30px #83c8ff35;
+}
+
+.founder-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.avatar-fallback {
+  color: var(--blue);
+  font-size: 38px;
   font-weight: 900;
-  margin: 0 auto 22px;
-  border: 4px solid #ffffff30;
-  box-shadow: 0 0 30px #83c8ff25;
 }
 
 .founder-card h3 {
@@ -1548,9 +1067,7 @@ nav a.active::after {
   margin: 0;
 }
 
-/* ===================================
-   NEW: 3 YEARS EXPERIENCE BADGE
-=================================== */
+/* 3 YEARS EXPERIENCE BADGE */
 
 .experience-badge {
   position: relative;
@@ -1559,14 +1076,16 @@ nav a.active::after {
   padding: 24px 16px;
   border: 1px solid #83c8ff60;
   border-radius: 16px;
-  background: linear-gradient(135deg,#183451,#101c2d);
+  background: linear-gradient(
+    135deg,#183451,#101c2d
+  );
   text-align: center;
   animation: experienceGlow 4s ease-in-out infinite;
 }
 
 .experience-years {
   display: block;
-  color: #83c8ff;
+  color: var(--blue);
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 2px;
@@ -1576,13 +1095,13 @@ nav a.active::after {
 
 .experience-badge strong {
   display: block;
-  color: #ffffff;
+  color: white;
   font-size: 17px;
   margin: 8px 0 5px;
 }
 
 .experience-badge small {
-  color: #a8b8cb;
+  color: var(--muted);
   font-size: 13px;
 }
 
@@ -1595,12 +1114,14 @@ nav a.active::after {
   }
 }
 
-/* ===================================
-   CONTACT
-=================================== */
+/* ==========================================
+   CONTACT FORM
+========================================== */
 
 .contact {
-  background: linear-gradient(135deg,#10243b,#080d16);
+  background: linear-gradient(
+    135deg,#10243b,#080d16
+  );
 }
 
 .contact-grid {
@@ -1675,9 +1196,9 @@ nav a.active::after {
   font-size: 12px;
 }
 
-/* ===================================
+/* ==========================================
    FOOTER & WHATSAPP
-=================================== */
+========================================== */
 
 footer {
   border-top: 1px solid var(--border);
@@ -1720,15 +1241,16 @@ footer {
   transform: translateY(-5px);
 }
 
-/* ===================================
-   SMOOTH STABLE ANIMATIONS
-=================================== */
+/* ==========================================
+   SMOOTH & STABLE ANIMATIONS
+========================================== */
 
 .reveal-ready {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity .65s ease,
-              transform .65s ease;
+  transition:
+    opacity .65s ease,
+    transform .65s ease;
   transition-delay: var(--delay,0ms);
 }
 
@@ -1741,14 +1263,14 @@ footer {
   transform: translateY(-6px);
 }
 
-/* ===================================
+/* ==========================================
    RESPONSIVE DESIGN
-=================================== */
+========================================== */
 
-@media (max-width:1100px) {
+@media (max-width:1150px) {
 
   nav {
-    gap: 12px;
+    gap: 11px;
   }
 
   nav a {
@@ -1766,7 +1288,7 @@ footer {
 
 }
 
-@media (max-width:850px) {
+@media (max-width:950px) {
 
   .navbar {
     min-height: 75px;
@@ -1785,6 +1307,8 @@ footer {
     align-items: stretch;
     gap: 0;
     padding: 10px 0 20px;
+    max-height: 70vh;
+    overflow-y: auto;
   }
 
   nav.open {
@@ -1834,7 +1358,7 @@ footer {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:650px) {
 
   section {
     padding: 60px 0;
@@ -1915,6 +1439,35 @@ footer {
     font-size: 14px;
   }
 
+  .stats-grid {
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 25px 12px;
+  }
+
+  .stat-card h3 {
+    font-size: 17px;
+  }
+
+  .stat-card p {
+    font-size: 12px;
+  }
+
+  .payment-box {
+    padding: 25px 18px;
+  }
+
+  .office-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .office-card {
+    padding: 28px 20px;
+  }
+
   .contact-form {
     padding: 22px;
   }
@@ -1938,7 +1491,8 @@ footer {
 
 @media (max-width:350px) {
 
-  .skills-grid {
+  .skills-grid,
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1973,16 +1527,25 @@ footer {
 
 <div id="progress" aria-hidden="true"></div>
 
-<!-- HEADER -->
+<!-- ==========================================
+     HEADER
+========================================== -->
 
 <header>
+
   <div class="wrap navbar">
 
-    <a class="logo" href="#home"
+    <a class="logo"
+       href="#home"
        aria-label="Pavi Solutions Home">
 
-      <span class="logo-main">PA<span>VI</span></span>
-      <span class="logo-sub">SOLUTIONS</span>
+      <span class="logo-main">
+        PA<span>VI</span>
+      </span>
+
+      <span class="logo-sub">
+        SOLUTIONS
+      </span>
 
     </a>
 
@@ -1994,13 +1557,15 @@ footer {
       ☰
     </button>
 
-    <nav id="navigation" aria-label="Main navigation">
+    <nav id="navigation"
+         aria-label="Main navigation">
 
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#markets">Markets</a>
       <a href="#skills">My Skills</a>
       <a href="#experience">Experience</a>
+      <a href="#achievements">Our Offices</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -2008,37 +1573,49 @@ footer {
     </nav>
 
   </div>
+
 </header>
 
 <main>
 
-<!-- ===================================
-     HOME
-==================================== -->
+<!-- ==========================================
+     HOME / HERO
+========================================== -->
 
 <section class="hero" id="home">
+
   <div class="wrap hero-grid">
 
     <div>
 
       <div class="hero-badge reveal">
+
         <span class="status-dot"></span>
-        PAVI SOLUTIONS • NEW AGENCY
+
+        PAVI SOLUTIONS • DIGITAL GROWTH AGENCY
+
       </div>
 
       <h1 class="reveal">
+
         Build your brand.<br>
+
         <span class="accent">
           Grow your business.
         </span>
+
       </h1>
 
       <p class="reveal">
-        Your digital marketing and e-commerce
-        partner. We help businesses build a
-        professional online presence through
-        marketplace management, strategic
-        advertising and creative branding.
+
+        Welcome to Pavi Solutions, your
+        professional digital marketing and
+        e-commerce partner. We help businesses
+        establish a strong online presence
+        through marketplace management,
+        strategic advertising and creative
+        branding.
+
       </p>
 
       <div class="actions reveal">
@@ -2051,17 +1628,21 @@ footer {
            href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
            target="_blank"
            rel="noopener noreferrer">
+
           Chat on WhatsApp ↗
+
         </a>
 
       </div>
 
       <div class="chips reveal">
+
         <span class="chip">Amazon</span>
         <span class="chip">eBay</span>
         <span class="chip">TikTok Shop</span>
         <span class="chip">Temu</span>
         <span class="chip">SEO & PPC</span>
+
       </div>
 
     </div>
@@ -2069,242 +1650,354 @@ footer {
     <div class="hero-visual reveal">
 
       <div class="visual-label">
-        DIGITAL GROWTH PARTNER
+        YOUR DIGITAL GROWTH PARTNER
       </div>
 
       <div class="visual-title">
+
         Strategy.<br>
         Creativity.<br>
-        <span class="accent">Execution.</span>
+
+        <span class="accent">
+          Execution.
+        </span>
+
       </div>
 
       <div class="visual-row">
+
         <div class="visual-icon">🛒</div>
+
         <div>
           <strong>Marketplace Growth</strong>
           <small>Amazon · eBay · TikTok Shop</small>
         </div>
+
       </div>
 
       <div class="visual-row">
+
         <div class="visual-icon">📈</div>
+
         <div>
           <strong>Performance Marketing</strong>
           <small>SEO · PPC · Digital Ads</small>
         </div>
+
       </div>
 
       <div class="visual-row">
+
         <div class="visual-icon">🎨</div>
+
         <div>
           <strong>Creative Branding</strong>
           <small>Design · Content · Social Media</small>
         </div>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
      SERVICES
-==================================== -->
+========================================== -->
 
 <section id="services">
+
   <div class="wrap">
 
-    <div class="eyebrow reveal">What We Do</div>
+    <div class="eyebrow reveal">
+      What We Do
+    </div>
 
     <h2 class="reveal">
+
       Everything your business needs
       <span class="accent">to grow online.</span>
+
     </h2>
 
     <p class="section-intro reveal">
-      Professional digital marketing and
-      e-commerce services tailored to your
-      business goals, products and target markets.
+
+      Our professional services are tailored
+      to your business goals, products and
+      target markets. We would be delighted
+      to help you find the right digital
+      solution for your business.
+
     </p>
 
     <div class="grid-3">
 
       <article class="card service-card reveal">
+
         <div class="card-icon">🛒</div>
-        <div class="card-number">01 / MARKETPLACE</div>
+
+        <div class="card-number">
+          01 / MARKETPLACE
+        </div>
+
         <h3>Amazon Management</h3>
+
         <p>
-          Seller Central support, product listings,
-          keyword research, A+ content, listing
-          optimisation and Amazon PPC.
+          Seller Central support, product
+          listings, keyword research,
+          A+ content, listing optimisation
+          and Amazon PPC support.
         </p>
+
         <a class="service-link"
            href="#contact"
            data-service="Amazon Management">
-          Enquire Now ↗
+
+          Discuss Your Requirements ↗
+
         </a>
+
       </article>
 
       <article class="card service-card reveal">
+
         <div class="card-icon">🏪</div>
-        <div class="card-number">02 / MARKETPLACE</div>
+
+        <div class="card-number">
+          02 / MARKETPLACE
+        </div>
+
         <h3>eBay Management</h3>
+
         <p>
           Store setup support, SEO titles,
           product listings, promoted listings,
-          order management and store optimisation.
+          order management and store
+          optimisation.
         </p>
+
         <a class="service-link"
            href="#contact"
            data-service="eBay Management">
-          Enquire Now ↗
+
+          Discuss Your Requirements ↗
+
         </a>
+
       </article>
 
       <article class="card service-card reveal">
+
         <div class="card-icon">📱</div>
-        <div class="card-number">03 / SOCIAL COMMERCE</div>
+
+        <div class="card-number">
+          03 / SOCIAL COMMERCE
+        </div>
+
         <h3>TikTok Shop</h3>
+
         <p>
-          Shop management, product listing creation,
-          promotional strategies and TikTok
-          advertising support.
+          Shop management, product listing
+          creation, promotional strategies
+          and TikTok advertising support.
         </p>
+
         <a class="service-link"
            href="#contact"
            data-service="TikTok Shop">
-          Enquire Now ↗
+
+          Discuss Your Requirements ↗
+
         </a>
+
       </article>
 
       <article class="card service-card reveal">
+
         <div class="card-icon">📦</div>
-        <div class="card-number">04 / E-COMMERCE</div>
+
+        <div class="card-number">
+          04 / E-COMMERCE
+        </div>
+
         <h3>Temu & Store Operations</h3>
+
         <p>
           Product catalogue management,
           marketplace support, inventory
-          coordination and order workflows.
+          coordination and efficient
+          order workflows.
         </p>
+
         <a class="service-link"
            href="#contact"
            data-service="Temu & Store Operations">
-          Enquire Now ↗
+
+          Discuss Your Requirements ↗
+
         </a>
+
       </article>
 
       <article class="card service-card reveal">
+
         <div class="card-icon">📊</div>
-        <div class="card-number">05 / PERFORMANCE</div>
+
+        <div class="card-number">
+          05 / PERFORMANCE
+        </div>
+
         <h3>SEO & Paid Advertising</h3>
+
         <p>
-          Keyword strategy, search optimisation,
-          Amazon PPC, Google Ads and Facebook
+          Keyword strategy, search
+          optimisation, Amazon PPC,
+          Google Ads and Facebook
           advertising campaign support.
         </p>
+
         <a class="service-link"
            href="#contact"
            data-service="SEO & Paid Advertising">
-          Enquire Now ↗
+
+          Discuss Your Requirements ↗
+
         </a>
+
       </article>
 
       <article class="card service-card reveal">
+
         <div class="card-icon">🎨</div>
-        <div class="card-number">06 / CREATIVE</div>
+
+        <div class="card-number">
+          06 / CREATIVE
+        </div>
+
         <h3>Social Media & Design</h3>
+
         <p>
-          Promotional posters, social media content,
-          Facebook and Instagram marketing,
-          brand identity and design.
+          Promotional posters, social
+          media content, Facebook and
+          Instagram marketing, brand
+          identity and professional design.
         </p>
+
         <a class="service-link"
            href="#contact"
            data-service="Social Media & Design">
-          Enquire Now ↗
+
+          Discuss Your Requirements ↗
+
         </a>
+
       </article>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
      INTERNATIONAL MARKETS
-==================================== -->
+========================================== -->
 
 <section class="markets" id="markets">
+
   <div class="wrap">
 
-    <div class="eyebrow reveal">International Focus</div>
+    <div class="eyebrow reveal">
+      International Focus
+    </div>
 
     <h2 class="reveal">
+
       Local expertise.
-      <span class="accent">Global opportunities.</span>
+      <span class="accent">
+        Global opportunities.
+      </span>
+
     </h2>
 
     <p class="section-intro reveal">
-      Our services are designed for businesses
-      targeting the United Kingdom, Ireland
-      and Canada.
+
+      We welcome businesses from the
+      United Kingdom, Ireland and Canada,
+      offering digital marketing and
+      e-commerce support tailored to
+      each market.
+
     </p>
 
     <div class="grid-3">
 
       <article class="card market-card reveal">
+
         <span class="flag">🇬🇧</span>
+
         <h3>United Kingdom</h3>
+
         <p>
           Amazon UK · eBay UK<br>
           TikTok Shop · Digital Marketing
         </p>
+
       </article>
 
       <article class="card market-card reveal">
+
         <span class="flag">🇮🇪</span>
+
         <h3>Ireland</h3>
+
         <p>
           Amazon Ireland · eBay<br>
           E-commerce Management
         </p>
+
       </article>
 
       <article class="card market-card reveal">
+
         <span class="flag">🇨🇦</span>
+
         <h3>Canada</h3>
+
         <p>
           Amazon Canada · eBay<br>
           SEO & Digital Advertising
         </p>
+
       </article>
 
     </div>
 
-    <p class="note reveal">
-      These are our target markets, not claims
-      of existing clients or local offices.
-    </p>
-
     <div class="actions reveal">
 
       <a class="btn btn-green"
-         href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20need%20international%20e-commerce%20support."
+         href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20discuss%20international%20e-commerce%20support."
          target="_blank"
          rel="noopener noreferrer">
+
         Enquire on WhatsApp ↗
+
       </a>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
      ONE-TIME SERVICES
-==================================== -->
+========================================== -->
 
 <section class="solutions" id="solutions">
+
   <div class="wrap">
 
     <div class="eyebrow reveal">
@@ -2312,69 +2005,104 @@ footer {
     </div>
 
     <h2 class="reveal">
+
       One-time projects.
       <span class="accent">Long-term value.</span>
+
     </h2>
 
     <p class="section-intro reveal">
-      Choose individual services or ongoing
-      support based on your business requirements.
+
+      Whether you require a single project
+      or ongoing support, we are happy to
+      discuss a service arrangement that
+      suits your business.
+
     </p>
 
     <div class="grid-3">
 
       <article class="card reveal">
+
         <div class="card-icon">⚡</div>
-        <div class="card-number">01 / ONE-TIME</div>
+
+        <div class="card-number">
+          01 / ONE-TIME
+        </div>
+
         <h3>One-Time Service Delivery</h3>
+
         <p>
           Product listings, SEO improvements,
           promotional designs and advertising
           setup with a clearly agreed scope.
         </p>
+
       </article>
 
       <article class="card reveal">
+
         <div class="card-icon">📈</div>
-        <div class="card-number">02 / SALES FOCUS</div>
+
+        <div class="card-number">
+          02 / SALES FOCUS
+        </div>
+
         <h3>Sales-Focused Marketing</h3>
+
         <p>
-          Campaigns designed to improve visibility,
-          attract relevant customers and support
-          sales opportunities. Results may vary.
+          Thoughtfully planned campaigns
+          designed to improve visibility,
+          reach relevant customers and
+          support sales opportunities.
+          Results may vary.
         </p>
+
       </article>
 
       <article class="card reveal">
+
         <div class="card-icon">💎</div>
-        <div class="card-number">03 / BRANDING</div>
+
+        <div class="card-number">
+          03 / BRANDING
+        </div>
+
         <h3>Premium Brand Identity</h3>
+
         <p>
           Professional brand presentation,
           creative designs and consistent
           visual marketing across platforms.
         </p>
+
       </article>
 
     </div>
 
     <div class="actions reveal">
+
       <a class="btn btn-green"
          href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20a%20one-time%20service%20quote."
          target="_blank"
          rel="noopener noreferrer">
+
         Request a One-Time Quote ↗
+
       </a>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
      MY SKILLS - TOP 8
-==================================== -->
+========================================== -->
 
 <section class="skills" id="skills">
+
   <div class="wrap">
 
     <div class="eyebrow reveal">
@@ -2382,122 +2110,195 @@ footer {
     </div>
 
     <h2 class="reveal">
+
       My Skills.
       <span class="accent">Built for growth.</span>
+
     </h2>
 
     <p class="section-intro reveal">
+
       Eight core professional skills developed
       through hands-on e-commerce operations,
-      marketplace management and digital marketing.
+      marketplace management and digital
+      marketing experience.
+
     </p>
 
     <div class="skills-grid">
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">🛒</div>
-        <div class="card-number">01 / SKILL</div>
+
+        <div class="card-number">
+          01 / SKILL
+        </div>
+
         <h3>Amazon Seller Central</h3>
+
         <p>
           Amazon UK and Ireland marketplace
-          management, product listings
-          and account support.
+          management, product listings and
+          account support.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">🏪</div>
-        <div class="card-number">02 / SKILL</div>
+
+        <div class="card-number">
+          02 / SKILL
+        </div>
+
         <h3>eBay Management</h3>
+
         <p>
           Store management, SEO titles,
           product listings and promoted
           listings support.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">📱</div>
-        <div class="card-number">03 / SKILL</div>
+
+        <div class="card-number">
+          03 / SKILL
+        </div>
+
         <h3>TikTok Shop & Temu</h3>
+
         <p>
           Marketplace operations, product
           catalogue management and
           promotional support.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">🔍</div>
-        <div class="card-number">04 / SKILL</div>
+
+        <div class="card-number">
+          04 / SKILL
+        </div>
+
         <h3>SEO & Listing Optimisation</h3>
+
         <p>
           Keyword research, SEO titles,
           descriptions, A+ content and
           product search visibility.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">📈</div>
-        <div class="card-number">05 / SKILL</div>
+
+        <div class="card-number">
+          05 / SKILL
+        </div>
+
         <h3>PPC & Digital Advertising</h3>
+
         <p>
           Amazon PPC fundamentals,
           advertising campaign setup
           and performance monitoring.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">🌐</div>
-        <div class="card-number">06 / SKILL</div>
+
+        <div class="card-number">
+          06 / SKILL
+        </div>
+
         <h3>Social Media Marketing</h3>
+
         <p>
           Facebook and Instagram marketing,
-          content planning and audience engagement.
+          content planning and audience
+          engagement.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">🎨</div>
-        <div class="card-number">07 / SKILL</div>
+
+        <div class="card-number">
+          07 / SKILL
+        </div>
+
         <h3>Graphic Design & Branding</h3>
+
         <p>
-          Promotional posters, brand creatives,
-          product presentation and social media design.
+          Promotional posters, brand
+          creatives, product presentation
+          and social media design.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
       <article class="card skill-card reveal">
+
         <div class="card-icon">📊</div>
-        <div class="card-number">08 / SKILL</div>
+
+        <div class="card-number">
+          08 / SKILL
+        </div>
+
         <h3>E-commerce Operations</h3>
+
         <p>
           Inventory, order management,
           customer support, Excel reporting
           and marketplace analytics.
         </p>
+
         <div class="skill-line"></div>
+
       </article>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
      WORKING EXPERIENCE
-==================================== -->
+========================================== -->
 
 <section class="experience" id="experience">
+
   <div class="wrap">
 
     <div class="eyebrow reveal">
@@ -2505,25 +2306,38 @@ footer {
     </div>
 
     <h2 class="reveal">
+
       Working Experience.
-      <span class="accent">My career journey.</span>
+      <span class="accent">
+        My career journey.
+      </span>
+
     </h2>
 
     <p class="section-intro reveal">
+
       From e-commerce executive to international
-      marketplace account management and building
-      my own digital marketing agency.
+      marketplace account management and
+      establishing my own digital marketing
+      agency.
+
     </p>
 
     <div class="timeline">
 
+      <!-- PAVI SOLUTIONS -->
+
       <article class="job reveal">
 
-        <span class="job-date">2026 • FOUNDER</span>
+        <span class="job-date">
+          2026 • FOUNDER
+        </span>
 
         <h3>Pavi Solutions</h3>
 
-        <div class="job-role">Founder & CEO</div>
+        <div class="job-role">
+          Founder & CEO
+        </div>
 
         <p>
           Founded a digital marketing and
@@ -2534,17 +2348,23 @@ footer {
         </p>
 
         <div class="job-tags">
+
           <span>Leadership</span>
           <span>Business Development</span>
           <span>Digital Marketing</span>
           <span>Brand Strategy</span>
+
         </div>
 
       </article>
 
+      <!-- BARGAIN GROCERY OUTLET -->
+
       <article class="job reveal">
 
-        <span class="job-date">OCTOBER 2025</span>
+        <span class="job-date">
+          OCTOBER 2025
+        </span>
 
         <h3>Bargain Grocery Outlet</h3>
 
@@ -2555,20 +2375,25 @@ footer {
         <p>
           Joined a UK-based retail business
           to support e-commerce operations,
-          marketplace listings, website product
-          management, promotional campaigns,
-          inventory coordination and customer service.
+          marketplace listings, website
+          product management, promotional
+          campaigns, inventory coordination
+          and customer service.
         </p>
 
         <div class="job-tags">
+
           <span>eBay</span>
           <span>Website Operations</span>
           <span>Product Listings</span>
           <span>Social Media</span>
           <span>Customer Service</span>
+
         </div>
 
       </article>
+
+      <!-- AMAZON IRELAND ACCOUNT HOLDER -->
 
       <article class="job reveal">
 
@@ -2587,17 +2412,22 @@ footer {
           marketplace operations, including
           product listing optimisation,
           account support, performance
-          monitoring and marketplace development.
+          monitoring and marketplace
+          development.
         </p>
 
         <div class="job-tags">
+
           <span>Amazon Ireland</span>
           <span>Seller Central</span>
           <span>Account Management</span>
           <span>Listing SEO</span>
+
         </div>
 
       </article>
+
+      <!-- E-COMMERCE EXECUTIVE -->
 
       <article class="job reveal">
 
@@ -2616,16 +2446,19 @@ footer {
           career working across Amazon, eBay,
           Temu, TikTok Shop and Facebook
           Marketplace. Developed practical
-          skills in product listings, marketplace
-          operations and digital sales support.
+          skills in product listings,
+          marketplace operations and
+          digital sales support.
         </p>
 
         <div class="job-tags">
+
           <span>Amazon</span>
           <span>eBay</span>
           <span>Temu</span>
           <span>TikTok Shop</span>
           <span>Facebook Marketplace</span>
+
         </div>
 
       </article>
@@ -2633,13 +2466,285 @@ footer {
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
+     NEW: PROJECTS & INTERNATIONAL OFFICES
+========================================== -->
+
+<section class="trust-section" id="achievements">
+
+  <div class="wrap">
+
+    <div class="trust-heading reveal">
+
+      <div class="eyebrow">
+        Our Experience & Customer Trust
+      </div>
+
+      <h2>
+
+        Experience. Trust.
+        <span class="accent">Results.</span>
+
+      </h2>
+
+      <p>
+        Professional digital solutions
+        supported by practical experience
+        and flexible international
+        payment arrangements.
+      </p>
+
+    </div>
+
+    <!-- ANIMATED PROJECT COUNTERS -->
+
+    <div class="stats-grid">
+
+      <article class="card stat-card reveal">
+
+        <span class="stat-number"
+              data-count="12">
+          12
+        </span>
+
+        <h3>Projects Worked On</h3>
+
+        <p>
+          Founder's professional project
+          experience in digital marketing,
+          e-commerce, branding and
+          marketplace management.
+        </p>
+
+      </article>
+
+      <article class="card stat-card reveal">
+
+        <span class="stat-number">
+
+          <span data-count="3">3</span>
+
+          Years
+
+        </span>
+
+        <h3>Industry Experience</h3>
+
+        <p>
+          Professional experience in
+          digital marketing and
+          e-commerce operations.
+        </p>
+
+      </article>
+
+    </div>
+
+    <!-- PAYMENT ASSURANCE -->
+
+    <div class="payment-box reveal">
+
+      <div class="payment-title">
+
+        <div class="shield-icon">
+          🛡️
+        </div>
+
+        <div class="eyebrow">
+          Customer Confidence & Flexible Payment
+        </div>
+
+        <h2>
+
+          Your Trust.
+          <span class="accent">
+            Our Priority.
+          </span>
+
+        </h2>
+
+        <div class="payment-headline">
+
+          Pay at Our UK or Canada Office
+          After Project Completion
+
+        </div>
+
+        <p>
+
+          For our valued customers in the
+          United Kingdom and Canada, we are
+          pleased to offer flexible
+          post-completion payment arrangements
+          for eligible projects.
+
+          Once your project has been completed,
+          you are welcome to review the agreed
+          deliverables before making your
+          payment at our UK or Canada office.
+
+        </p>
+
+      </div>
+
+      <!-- UK & CANADA OFFICES -->
+
+      <div class="office-grid">
+
+        <!-- UK OFFICE -->
+
+        <article class="card office-card reveal">
+
+          <span class="office-flag">
+            🇬🇧
+          </span>
+
+          <div class="office-label">
+            United Kingdom Office
+          </div>
+
+          <h3>Stevenage</h3>
+
+          <p>
+            Hertfordshire, United Kingdom
+          </p>
+
+          <div class="office-status">
+
+            <span class="office-dot"></span>
+
+            In-Person Payment by Appointment
+
+          </div>
+
+          <div class="actions"
+               style="justify-content:center">
+
+            <a class="btn btn-outline"
+               href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20Stevenage%20UK%20office%20and%20payment%20arrangements."
+               target="_blank"
+               rel="noopener noreferrer">
+
+              Enquire About UK Office ↗
+
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- CANADA OFFICE -->
+
+        <article class="card office-card reveal">
+
+          <span class="office-flag">
+            🇨🇦
+          </span>
+
+          <div class="office-label">
+            Canada Office
+          </div>
+
+          <h3>Ontario</h3>
+
+          <p>
+            Ontario, Canada
+          </p>
+
+          <div class="office-status">
+
+            <span class="office-dot"></span>
+
+            In-Person Payment by Appointment
+
+          </div>
+
+          <div class="actions"
+               style="justify-content:center">
+
+            <a class="btn btn-outline"
+               href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20Ontario%20Canada%20office%20and%20payment%20arrangements."
+               target="_blank"
+               rel="noopener noreferrer">
+
+              Enquire About Canada Office ↗
+
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- POLITE PROFESSIONAL DISCLAIMER -->
+
+      <div class="payment-disclaimer">
+
+        <h4>
+          Payment Terms & Important Information
+        </h4>
+
+        <p>
+
+          We kindly request that all project
+          requirements, pricing, deliverables
+          and payment terms are agreed in
+          writing before work begins.
+
+          Post-completion payment arrangements
+          are available for eligible projects
+          and are subject to prior agreement.
+
+          Please note that third-party
+          advertising budgets, platform fees
+          and external service costs may
+          require advance payment.
+
+          For your convenience, office visits
+          and in-person payments should be
+          arranged by appointment. Please
+          contact our team to confirm the
+          office address and available
+          appointment times before visiting.
+
+          Thank you for your understanding
+          and for considering Pavi Solutions
+          as your digital growth partner.
+
+        </p>
+
+      </div>
+
+      <div class="actions"
+           style="justify-content:center">
+
+        <a class="btn btn-green"
+           href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20project%20and%20your%20UK%20or%20Canada%20payment%20options."
+           target="_blank"
+           rel="noopener noreferrer">
+
+          Discuss Your Project on WhatsApp ↗
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ==========================================
      PORTFOLIO
-==================================== -->
+========================================== -->
 
 <section class="portfolio" id="portfolio">
+
   <div class="wrap">
 
     <div class="eyebrow reveal">
@@ -2647,14 +2752,20 @@ footer {
     </div>
 
     <h2 class="reveal">
+
       Creative work.
-      <span class="accent">Practical solutions.</span>
+      <span class="accent">
+        Practical solutions.
+      </span>
+
     </h2>
 
     <p class="section-intro reveal">
-      Sample concepts demonstrating our
-      e-commerce, branding and digital
+
+      Explore sample concepts demonstrating
+      our e-commerce, branding and digital
       marketing capabilities.
+
     </p>
 
     <div class="grid-3">
@@ -2666,11 +2777,15 @@ footer {
         </div>
 
         <div class="work-info">
+
           <h3>Product Listing Design</h3>
+
           <p>
             Amazon, eBay and TikTok Shop
-            product content and listing concepts.
+            product content and listing
+            concepts.
           </p>
+
         </div>
 
       </article>
@@ -2682,12 +2797,15 @@ footer {
         </div>
 
         <div class="work-info">
+
           <h3>Creative Marketing</h3>
+
           <p>
             Branded promotional posters,
-            social media content and campaign
-            design concepts.
+            social media content and
+            campaign design concepts.
           </p>
+
         </div>
 
       </article>
@@ -2699,12 +2817,15 @@ footer {
         </div>
 
         <div class="work-info">
+
           <h3>Advertising Campaigns</h3>
+
           <p>
             Digital marketing strategy,
             campaign planning and paid
             advertising support.
           </p>
+
         </div>
 
       </article>
@@ -2712,20 +2833,25 @@ footer {
     </div>
 
     <p class="note reveal">
-      Portfolio items are sample concepts only,
-      not completed client projects.
-      We are welcoming new clients.
+
+      The portfolio items displayed above
+      are sample concepts, not completed
+      client projects. Pavi Solutions
+      welcomes new clients and business
+      enquiries.
+
     </p>
 
   </div>
+
 </section>
 
-<!-- ===================================
-     ABOUT FOUNDER
-     UPDATED WITH 3 YEARS EXPERIENCE
-==================================== -->
+<!-- ==========================================
+     ABOUT FOUNDER - ORIGINAL PROFILE IMAGE
+========================================== -->
 
 <section id="about">
+
   <div class="wrap about-grid">
 
     <div>
@@ -2735,29 +2861,44 @@ footer {
       </div>
 
       <h2 class="reveal">
+
         Your partner in
-        <span class="accent">digital growth.</span>
+        <span class="accent">
+          digital growth.
+        </span>
+
       </h2>
 
       <p class="reveal">
+
         Pavi Solutions is a digital marketing
-        and e-commerce services agency based
-        in Jaffna, Sri Lanka, founded by
-        Hematharan Piraiyzhahan.
+        and e-commerce services agency
+        founded by Hematharan Piraiyzhahan,
+        based in Jaffna, Sri Lanka.
+
       </p>
 
       <p class="reveal">
-        With practical experience in international
-        marketplace operations, our mission is
-        to help businesses build a professional
-        online presence through strategic marketing,
-        creative design and e-commerce support.
+
+        With practical experience in
+        international marketplace operations,
+        our mission is to help businesses
+        establish a professional online
+        presence through strategic marketing,
+        creative design and e-commerce
+        support.
+
       </p>
 
       <p class="reveal">
+
         We believe in clear communication,
-        professional service delivery and
-        practical solutions tailored to each business.
+        transparency and professional
+        service delivery. We appreciate
+        every opportunity to work with
+        businesses and look forward to
+        supporting your digital journey.
+
       </p>
 
       <div class="actions reveal">
@@ -2766,29 +2907,41 @@ footer {
           Start a Conversation ↗
         </a>
 
-        <a class="btn btn-outline" href="#experience">
+        <a class="btn btn-outline"
+           href="#experience">
+
           My Experience ↗
+
         </a>
 
       </div>
 
     </div>
 
+    <!-- FOUNDER PROFILE CARD -->
+
     <div class="founder-card reveal">
 
-      <!-- FOUNDER PROFILE -->
+      <div class="founder-avatar">
 
- 
-<div class="founder-avatar">
-  <img src="profile.jpeg"
-       alt="Hematharan Piraiyzhahan"
-       style="width:100%;
-              height:100%;
-              object-fit:cover;
-              border-radius:50%;">
-</div>
+        <img src="profile.jpeg"
+             alt="Hematharan Piraiyzhahan - Founder of Pavi Solutions"
+             width="135"
+             height="135"
+             loading="lazy"
+             id="profileImage">
 
-      <h3>Hematharan Piraiyzhahan</h3>
+        <span class="avatar-fallback"
+              id="avatarFallback"
+              hidden>
+          HP
+        </span>
+
+      </div>
+
+      <h3>
+        Hematharan Piraiyzhahan
+      </h3>
 
       <div class="founder-role">
         Founder & CEO
@@ -2802,7 +2955,7 @@ footer {
         E-commerce & Digital Marketing Specialist
       </p>
 
-      <!-- NEW 3 YEARS EXPERIENCE BADGE -->
+      <!-- 3 YEARS EXPERIENCE -->
 
       <div class="experience-badge">
 
@@ -2820,8 +2973,6 @@ footer {
 
       </div>
 
-      <!-- END EXPERIENCE BADGE -->
-
       <p style="margin-top:15px">
         📍 Jaffna, Sri Lanka
       </p>
@@ -2829,8 +2980,11 @@ footer {
       <div class="actions"
            style="justify-content:center">
 
-        <a class="btn btn-outline" href="#skills">
+        <a class="btn btn-outline"
+           href="#skills">
+
           View My Skills ↗
+
         </a>
 
       </div>
@@ -2838,13 +2992,15 @@ footer {
     </div>
 
   </div>
+
 </section>
 
-<!-- ===================================
+<!-- ==========================================
      CONTACT
-==================================== -->
+========================================== -->
 
 <section class="contact" id="contact">
+
   <div class="wrap contact-grid">
 
     <div>
@@ -2854,41 +3010,92 @@ footer {
       </div>
 
       <h2 class="reveal">
+
         Ready to grow
-        <span class="accent">your business?</span>
+        <span class="accent">
+          your business?
+        </span>
+
       </h2>
 
       <p class="section-intro reveal">
-        Tell us about your business and the
-        services you need. Let's discuss a
-        solution that fits your goals.
+
+        We would be delighted to hear from
+        you. Please tell us about your
+        business and the services you
+        require, and we will be happy to
+        discuss a suitable solution.
+
       </p>
 
       <div class="contact-details reveal">
 
         <div class="contact-item">
+
           <small>Founder</small>
-          <strong>Hematharan Piraiyzhahan</strong>
+
+          <strong>
+            Hematharan Piraiyzhahan
+          </strong>
+
         </div>
 
         <div class="contact-item">
+
           <small>Email Address</small>
+
           <a href="mailto:piraiyzhahan1019@gmail.com">
+
             piraiyzhahan1019@gmail.com
+
           </a>
+
         </div>
 
         <div class="contact-item">
+
           <small>Phone / WhatsApp</small>
+
           <a href="tel:+94756272065">
+
             +94 75 627 2065
+
           </a>
+
         </div>
 
         <div class="contact-item">
-          <small>Location</small>
-          <strong>Jaffna, Sri Lanka</strong>
+
+          <small>Business Base</small>
+
+          <strong>
+            Jaffna, Sri Lanka
+          </strong>
+
         </div>
+
+        <div class="contact-item">
+
+          <small>International Offices</small>
+
+          <strong>
+            🇬🇧 Stevenage, United Kingdom
+          </strong>
+
+          <br>
+
+          <strong>
+            🇨🇦 Ontario, Canada
+          </strong>
+
+        </div>
+
+        <p class="note">
+
+          Please contact us to arrange
+          an office appointment.
+
+        </p>
 
       </div>
 
@@ -2898,37 +3105,68 @@ footer {
            href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20have%20a%20business%20enquiry."
            target="_blank"
            rel="noopener noreferrer">
+
           Contact Directly on WhatsApp ↗
+
         </a>
 
       </div>
 
     </div>
 
-    <form class="contact-form reveal" id="enquiryForm">
+    <!-- CUSTOMER ENQUIRY FORM -->
+
+    <form class="contact-form reveal"
+          id="enquiryForm">
 
       <h3>Send an Enquiry</h3>
 
-      <label for="name">Your Name</label>
+      <label for="name">
+        Your Name
+      </label>
 
       <input id="name"
              type="text"
-             placeholder="Enter your name"
+             placeholder="Please enter your name"
              maxlength="100"
              required>
 
-      <label for="business">Business Name</label>
+      <label for="business">
+        Business Name
+      </label>
 
       <input id="business"
              type="text"
              placeholder="Your business name"
              maxlength="100">
 
-      <label for="service">Select Service</label>
+      <label for="country">
+        Your Country
+      </label>
+
+      <select id="country" required>
+
+        <option value="">
+          Please select your country
+        </option>
+
+        <option>United Kingdom</option>
+        <option>Ireland</option>
+        <option>Canada</option>
+        <option>Sri Lanka</option>
+        <option>Other</option>
+
+      </select>
+
+      <label for="service">
+        Select Service
+      </label>
 
       <select id="service" required>
 
-        <option value="">Choose a service</option>
+        <option value="">
+          Please choose a service
+        </option>
 
         <option>Amazon Management</option>
         <option>eBay Management</option>
@@ -2941,44 +3179,89 @@ footer {
 
       </select>
 
-      <label for="message">Your Requirements</label>
+      <label for="payment">
+        Preferred Payment Arrangement
+      </label>
+
+      <select id="payment">
+
+        <option>
+          Discuss Payment Options
+        </option>
+
+        <option>
+          UK Office - Stevenage
+        </option>
+
+        <option>
+          Canada Office - Ontario
+        </option>
+
+        <option>
+          Online Payment
+        </option>
+
+      </select>
+
+      <label for="message">
+        Your Requirements
+      </label>
 
       <textarea id="message"
-                placeholder="Tell us about your project..."
+                placeholder="Please tell us about your project..."
                 maxlength="1200"
                 required></textarea>
 
-      <button class="btn btn-green" type="submit">
+      <button class="btn btn-green"
+              type="submit">
+
         Send Enquiry via WhatsApp ↗
+
       </button>
 
       <small>
-        This form opens WhatsApp with your enquiry.
-        Your information is not stored on a website server.
+
+        This form opens WhatsApp with your
+        enquiry details. Your information
+        is not stored on a website server.
+        Payment arrangements are subject
+        to prior agreement.
+
       </small>
 
     </form>
 
   </div>
+
 </section>
 
 </main>
 
-<!-- ===================================
+<!-- ==========================================
      FOOTER
-==================================== -->
+========================================== -->
 
 <footer>
+
   <div class="wrap footer-grid">
 
     <a class="logo" href="#home">
-      <span class="logo-main">PA<span>VI</span></span>
-      <span class="logo-sub">SOLUTIONS</span>
+
+      <span class="logo-main">
+        PA<span>VI</span>
+      </span>
+
+      <span class="logo-sub">
+        SOLUTIONS
+      </span>
+
     </a>
 
     <p>
+
       © <span id="year"></span>
       Pavi Solutions. All rights reserved.
+
     </p>
 
     <p>
@@ -2986,9 +3269,10 @@ footer {
     </p>
 
   </div>
+
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON -->
+<!-- FLOATING WHATSAPP -->
 
 <a class="float-wa"
    href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
@@ -3000,9 +3284,9 @@ footer {
 
 </a>
 
-<!-- ===================================
-     JAVASCRIPT ANIMATION SYSTEM
-==================================== -->
+<!-- ==========================================
+     FINAL JAVASCRIPT SYSTEM
+========================================== -->
 
 <script>
 
@@ -3013,7 +3297,9 @@ footer {
 document.getElementById("year").textContent =
   new Date().getFullYear();
 
-/* MOBILE MENU */
+/* ==========================================
+   MOBILE NAVIGATION
+========================================== */
 
 const menuBtn =
   document.getElementById("menuBtn");
@@ -3026,13 +3312,11 @@ function closeMenu() {
   navigation.classList.remove("open");
 
   menuBtn.setAttribute(
-    "aria-expanded",
-    "false"
+    "aria-expanded","false"
   );
 
   menuBtn.setAttribute(
-    "aria-label",
-    "Open navigation"
+    "aria-label","Open navigation"
   );
 
   menuBtn.textContent = "☰";
@@ -3045,8 +3329,7 @@ menuBtn.addEventListener("click",function() {
     navigation.classList.toggle("open");
 
   menuBtn.setAttribute(
-    "aria-expanded",
-    String(isOpen)
+    "aria-expanded",String(isOpen)
   );
 
   menuBtn.setAttribute(
@@ -3076,13 +3359,47 @@ document.addEventListener("keydown",function(e) {
 
 window.addEventListener("resize",function() {
 
-  if (window.innerWidth > 850) {
+  if (window.innerWidth > 950) {
     closeMenu();
   }
 
 });
 
-/* STABLE SCROLL REVEAL ANIMATION */
+/* ==========================================
+   PROFILE IMAGE FALLBACK
+========================================== */
+
+const profileImage =
+  document.getElementById("profileImage");
+
+const avatarFallback =
+  document.getElementById("avatarFallback");
+
+function showAvatarFallback() {
+
+  profileImage.style.display = "none";
+
+  avatarFallback.hidden = false;
+
+}
+
+profileImage.addEventListener(
+  "error",
+  showAvatarFallback
+);
+
+if (
+  profileImage.complete &&
+  profileImage.naturalWidth === 0
+) {
+
+  showAvatarFallback();
+
+}
+
+/* ==========================================
+   SMOOTH SCROLL REVEAL
+========================================== */
 
 const motionPreference =
   window.matchMedia(
@@ -3102,9 +3419,13 @@ if (
 
           if (entry.isIntersecting) {
 
-            entry.target.classList.add("visible");
+            entry.target.classList.add(
+              "visible"
+            );
 
-            revealObserver.unobserve(entry.target);
+            revealObserver.unobserve(
+              entry.target
+            );
 
           }
 
@@ -3112,8 +3433,8 @@ if (
 
       },
       {
-        threshold: 0.06,
-        rootMargin: "0px 0px -8px 0px"
+        threshold: 0.04,
+        rootMargin: "0px 0px 0px 0px"
       }
     );
 
@@ -3129,7 +3450,7 @@ if (
   /* STAGGERED CARD ANIMATIONS */
 
   document.querySelectorAll(
-    ".grid-3, .skills-grid"
+    ".grid-3, .skills-grid, .stats-grid, .office-grid"
   ).forEach(function(grid) {
 
     Array.from(grid.children)
@@ -3144,7 +3465,7 @@ if (
 
   });
 
-  /* ANIMATION SAFETY FALLBACK */
+  /* SAFETY FALLBACK */
 
   window.setTimeout(function() {
 
@@ -3168,9 +3489,90 @@ if (
 
   },1800);
 
+  /* ========================================
+     ANIMATED NUMBER COUNTERS
+  ======================================== */
+
+  const counterObserver =
+    new IntersectionObserver(
+      function(entries) {
+
+        entries.forEach(function(entry) {
+
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          const counter = entry.target;
+
+          const target =
+            Number(counter.dataset.count);
+
+          if (!Number.isFinite(target)) {
+            return;
+          }
+
+          const duration = 1200;
+
+          let startTime = null;
+
+          function animateCount(time) {
+
+            if (startTime === null) {
+              startTime = time;
+            }
+
+            const progress = Math.min(
+              (time - startTime) / duration,
+              1
+            );
+
+            const eased =
+              1 - Math.pow(1 - progress,3);
+
+            counter.textContent =
+              Math.floor(target * eased);
+
+            if (progress < 1) {
+
+              requestAnimationFrame(
+                animateCount
+              );
+
+            } else {
+
+              counter.textContent = target;
+
+            }
+
+          }
+
+          requestAnimationFrame(
+            animateCount
+          );
+
+          counterObserver.unobserve(
+            counter
+          );
+
+        });
+
+      },
+      { threshold: 0.4 }
+    );
+
+  document.querySelectorAll("[data-count]")
+  .forEach(function(counter) {
+
+    counterObserver.observe(counter);
+
+  });
+
 }
 
-/* ACTIVE TAB & SCROLL PROGRESS */
+/* ==========================================
+   ACTIVE TAB & SCROLL PROGRESS
+========================================== */
 
 const navLinks = Array.from(
   document.querySelectorAll(
@@ -3212,7 +3614,8 @@ function updateScroll() {
     "scaleX(" + ratio + ")";
 
   const headerHeight =
-    document.querySelector("header").offsetHeight;
+    document.querySelector("header")
+    .offsetHeight;
 
   let currentSection = "home";
 
@@ -3249,13 +3652,14 @@ function updateScroll() {
     if (active) {
 
       link.setAttribute(
-        "aria-current",
-        "location"
+        "aria-current","location"
       );
 
     } else {
 
-      link.removeAttribute("aria-current");
+      link.removeAttribute(
+        "aria-current"
+      );
 
     }
 
@@ -3290,7 +3694,9 @@ window.addEventListener(
 
 updateScroll();
 
-/* AUTO SELECT SERVICE */
+/* ==========================================
+   AUTO SELECT SERVICE
+========================================== */
 
 document.querySelectorAll("[data-service]")
 .forEach(function(link) {
@@ -3304,7 +3710,9 @@ document.querySelectorAll("[data-service]")
 
 });
 
-/* WHATSAPP ENQUIRY FORM */
+/* ==========================================
+   WHATSAPP ENQUIRY FORM
+========================================== */
 
 document.getElementById("enquiryForm")
 .addEventListener("submit",function(event) {
@@ -3319,18 +3727,31 @@ document.getElementById("enquiryForm")
     document.getElementById("business")
     .value.trim();
 
+  const country =
+    document.getElementById("country")
+    .value;
+
   const service =
     document.getElementById("service")
+    .value;
+
+  const payment =
+    document.getElementById("payment")
     .value;
 
   const message =
     document.getElementById("message")
     .value.trim();
 
-  if (!name || !service || !message) {
+  if (
+    !name ||
+    !country ||
+    !service ||
+    !message
+  ) {
 
     alert(
-      "Please enter your name, service and requirements."
+      "Please complete your name, country, service and project requirements."
     );
 
     return;
@@ -3339,11 +3760,23 @@ document.getElementById("enquiryForm")
 
   const text =
     "Hello Pavi Solutions!\n\n" +
+
+    "I would like to enquire about your services.\n\n" +
+
     "Name: " + name + "\n" +
+
     "Business: " +
     (business || "Not specified") + "\n" +
-    "Service: " + service + "\n\n" +
-    "Requirements:\n" + message;
+
+    "Country: " + country + "\n" +
+
+    "Service: " + service + "\n" +
+
+    "Preferred Payment: " + payment + "\n\n" +
+
+    "Project Requirements:\n" + message +
+
+    "\n\nThank you. I look forward to hearing from you.";
 
   const url =
     "https://wa.me/94756272065?text=" +
@@ -3356,7 +3789,9 @@ document.getElementById("enquiryForm")
   link.rel = "noopener noreferrer";
 
   document.body.appendChild(link);
+
   link.click();
+
   link.remove();
 
 });
