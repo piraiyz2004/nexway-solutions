@@ -2,19 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pavi Solutions | Digital Marketing & E-commerce Agency</title>
+<title>PAVI SOLUTIONS | Digital Marketing & E-commerce Agency</title>
 
-<meta name="description" content="Pavi Solutions provides professional digital marketing, Amazon, eBay, TikTok Shop, Temu, SEO, PPC, social media and e-commerce services for businesses in the UK, Ireland and Canada.">
+<meta name="description" content="Pavi Solutions provides professional digital marketing, Amazon, eBay, TikTok Shop, Temu, SEO, PPC, branding and e-commerce services for businesses in the UK, Ireland and Canada.">
 
 <meta name="author" content="Hematharan Piraiyzhahan">
 <meta name="theme-color" content="#080d16">
 
-<meta property="og:title" content="Pavi Solutions | Digital Growth Agency">
-<meta property="og:description" content="Your trusted partner for digital marketing, e-commerce and business growth.">
+<meta property="og:title" content="PAVI SOLUTIONS | Your Digital Growth Partner">
+<meta property="og:description" content="Professional digital marketing, e-commerce and creative business solutions.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://piraiyz2004.github.io/nexway-solutions/">
 
@@ -22,1500 +21,1614 @@
 
 <style>
 
-/* ==========================================
-   PAVI SOLUTIONS - FINAL PREMIUM WEBSITE
-   VERSION 3.0
-========================================== */
+/* ========================================
+   PAVI SOLUTIONS
+   FINAL PREMIUM WEBSITE V4.0
+======================================== */
 
 :root {
-  --bg: #080d16;
-  --panel: #101b2b;
-  --panel-light: #152438;
-  --blue: #83c8ff;
-  --blue-dark: #3999ed;
-  --white: #f8fafc;
-  --muted: #a8b8cb;
-  --border: rgba(131,200,255,.18);
-  --green: #25d366;
-  --radius: 20px;
+  --bg:#080d16;
+  --panel:#101c2d;
+  --blue:#83c8ff;
+  --blue2:#3999ed;
+  --white:#f8fafc;
+  --muted:#a8b8cb;
+  --border:rgba(131,200,255,.20);
+  --green:#25d366;
+  --radius:22px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-behavior:smooth;
+  scroll-padding-top:100px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--white);
-  line-height: 1.65;
-  overflow-x: hidden;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--white);
+  background:var(--bg);
+  line-height:1.65;
+  overflow-x:hidden;
+  position:relative;
+  isolation:isolate;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration:none;
+  color:inherit;
 }
 
-button, input, textarea, select {
-  font: inherit;
+button,input,select,textarea {
+  font:inherit;
 }
 
 button {
-  cursor: pointer;
+  cursor:pointer;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+  display:block;
+  max-width:100%;
 }
 
 .wrap {
-  width: min(1200px, 92%);
-  margin: auto;
+  width:min(1200px,92%);
+  margin:auto;
 }
 
 section {
-  padding: 90px 0;
+  padding:90px 0;
+  position:relative;
+  border-bottom:1px solid #83c8ff10;
+}
+
+main section:nth-of-type(even) {
+  background:rgba(13,24,40,.24);
 }
 
 .accent {
-  color: var(--blue);
+  color:var(--blue);
+  text-shadow:0 0 25px #3999ed40;
 }
 
 .eyebrow {
-  color: var(--blue);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:15px;
 }
 
 h1 {
-  font-size: clamp(44px, 7vw, 85px);
-  line-height: 1.08;
-  letter-spacing: -3px;
-  margin-bottom: 25px;
+  font-size:clamp(44px,6.5vw,82px);
+  line-height:1.08;
+  letter-spacing:-3px;
+  margin-bottom:25px;
 }
 
 h2 {
-  font-size: clamp(32px, 4.5vw, 52px);
-  line-height: 1.15;
-  letter-spacing: -1.5px;
-  margin-bottom: 18px;
+  font-size:clamp(32px,4.5vw,50px);
+  line-height:1.15;
+  letter-spacing:-1.5px;
+  margin-bottom:18px;
 }
 
 h3 {
-  line-height: 1.35;
-  margin-bottom: 10px;
+  line-height:1.35;
+  margin-bottom:10px;
 }
 
 .section-intro {
-  max-width: 750px;
-  color: var(--muted);
-  font-size: 16px;
+  max-width:750px;
+  color:var(--muted);
+  font-size:16px;
 }
 
 :focus-visible {
-  outline: 3px solid var(--blue);
-  outline-offset: 5px;
+  outline:3px solid var(--blue);
+  outline-offset:4px;
 }
 
-/* ==========================================
-   BUTTONS
-========================================== */
+/* ========================================
+   FULL WEBSITE PREMIUM BACKGROUND
+======================================== */
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  background: var(--blue);
-  color: #071522;
-  padding: 14px 23px;
-  border: 1px solid var(--blue);
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 800;
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    background .25s ease;
+.premium-bg {
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+  pointer-events:none;
+  background:#080d16;
 }
 
-.btn:hover {
-  transform: translateY(-4px);
-  background: #b9e4ff;
-  box-shadow: 0 10px 30px #83c8ff25;
+/* Floating Blue Glow */
+
+.glow {
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+  will-change:transform;
 }
 
-.btn:active {
-  transform: scale(.97);
+.glow-one {
+  width:700px;
+  height:700px;
+  top:-250px;
+  right:-180px;
+  background:radial-gradient(
+    circle,
+    rgba(36,139,255,.28),
+    transparent 70%
+  );
+  animation:floatOne 18s ease-in-out infinite;
 }
 
-.btn-outline {
-  background: transparent;
-  color: var(--blue);
+.glow-two {
+  width:650px;
+  height:650px;
+  bottom:-250px;
+  left:-180px;
+  background:radial-gradient(
+    circle,
+    rgba(0,200,255,.19),
+    transparent 70%
+  );
+  animation:floatTwo 22s ease-in-out infinite;
 }
 
-.btn-outline:hover {
-  background: #83c8ff12;
+.glow-three {
+  width:500px;
+  height:500px;
+  top:35%;
+  left:30%;
+  background:radial-gradient(
+    circle,
+    rgba(95,100,255,.14),
+    transparent 70%
+  );
+  animation:floatThree 25s ease-in-out infinite;
 }
 
-.btn-green {
-  background: var(--green);
-  border-color: var(--green);
-  color: #072b16;
+@keyframes floatOne {
+  0%,100% {
+    transform:translate(0,0) scale(1);
+  }
+  50% {
+    transform:translate(-120px,100px) scale(1.2);
+  }
 }
 
-.btn-green:hover {
-  background: #5be88e;
+@keyframes floatTwo {
+  0%,100% {
+    transform:translate(0,0);
+  }
+  50% {
+    transform:translate(130px,-100px);
+  }
 }
 
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 30px;
+@keyframes floatThree {
+  0%,100% {
+    transform:translate(0,0) scale(1);
+  }
+  50% {
+    transform:translate(80px,-100px) scale(1.3);
+  }
 }
 
-/* ==========================================
+/* Technology Grid */
+
+.tech-grid {
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(
+      rgba(131,200,255,.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(131,200,255,.035) 1px,
+      transparent 1px
+    );
+  background-size:55px 55px;
+  opacity:.7;
+}
+
+/* Moving Light Beam */
+
+.light-beam {
+  position:absolute;
+  top:-30%;
+  left:-25%;
+  width:180px;
+  height:170%;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(131,200,255,.065),
+    transparent
+  );
+  animation:beamMove 18s linear infinite;
+}
+
+@keyframes beamMove {
+  from {
+    transform:translateX(-30vw) rotate(-25deg);
+  }
+  to {
+    transform:translateX(160vw) rotate(-25deg);
+  }
+}
+
+/* Floating Light Particles */
+
+.particles {
+  position:absolute;
+  inset:0;
+}
+
+.particle {
+  position:absolute;
+  border-radius:50%;
+  background:#83c8ff;
+  box-shadow:0 0 10px #83c8ff;
+  opacity:.4;
+  animation:particleFloat
+    var(--speed,12s)
+    ease-in-out infinite;
+  animation-delay:var(--delay,0s);
+}
+
+@keyframes particleFloat {
+  0%,100% {
+    transform:translateY(0);
+    opacity:.2;
+  }
+  50% {
+    transform:translateY(-45px);
+    opacity:.85;
+  }
+}
+
+/* ========================================
    HEADER & NAVIGATION
-========================================== */
+======================================== */
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(8,13,22,.96);
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(8,13,22,.88);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  box-shadow:0 4px 30px #0003;
 }
 
 .navbar {
-  min-height: 85px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 22px;
+  min-height:85px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-  flex-shrink: 0;
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+  flex-shrink:0;
 }
 
 .logo-main {
-  font-size: 35px;
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: -2px;
+  font-size:35px;
+  font-weight:900;
+  font-style:italic;
+  letter-spacing:-2px;
 }
 
 .logo-main span {
-  color: var(--blue);
-  text-shadow: 0 0 20px #83c8ff55;
+  color:var(--blue);
+  text-shadow:0 0 22px #83c8ff70;
 }
 
 .logo-sub {
-  font-size: 10px;
-  letter-spacing: 5px;
-  font-weight: 800;
-  margin-top: 7px;
+  font-size:10px;
+  letter-spacing:5px;
+  font-weight:800;
+  margin-top:7px;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  gap: 17px;
+  display:flex;
+  align-items:center;
+  gap:16px;
 }
 
 nav a {
-  position: relative;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px 0;
-  color: #d4dce6;
-  white-space: nowrap;
-  transition: color .25s ease;
+  position:relative;
+  color:#d4dce6;
+  font-size:13px;
+  font-weight:600;
+  padding:10px 0;
+  white-space:nowrap;
+  transition:color .25s;
 }
 
 nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background: var(--blue);
-  border-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .3s ease;
+  content:"";
+  position:absolute;
+  bottom:2px;
+  left:0;
+  width:100%;
+  height:2px;
+  border-radius:10px;
+  background:var(--blue);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .3s;
 }
 
 nav a:hover,
 nav a.active {
-  color: var(--blue);
+  color:var(--blue);
 }
 
 nav a:hover::after,
 nav a.active::after {
-  transform: scaleX(1);
+  transform:scaleX(1);
 }
 
 .menu-btn {
-  display: none;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 9px;
-  color: white;
-  font-size: 24px;
-  padding: 6px 14px;
+  display:none;
+  color:white;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:10px;
+  font-size:24px;
+  padding:5px 13px;
 }
 
 #progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:3px;
+  background:linear-gradient(
     90deg,#3999ed,#83c8ff
   );
-  transform: scaleX(0);
-  transform-origin: left;
-  z-index: 2000;
-  pointer-events: none;
+  transform:scaleX(0);
+  transform-origin:left;
+  z-index:2000;
+  pointer-events:none;
 }
 
-/* ==========================================
-   HERO
-========================================== */
+/* ========================================
+   PREMIUM BUTTONS
+======================================== */
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px 23px;
+  border-radius:11px;
+  border:1px solid var(--blue);
+  background:linear-gradient(
+    135deg,#b3e2ff,#58aaff
+  );
+  color:#071522;
+  font-size:14px;
+  font-weight:800;
+  box-shadow:0 5px 25px #83c8ff15;
+  transition:
+    transform .25s,
+    box-shadow .25s,
+    background .25s;
+}
+
+.btn:hover {
+  transform:translateY(-4px);
+  box-shadow:0 10px 35px #83c8ff35;
+}
+
+.btn:active {
+  transform:scale(.97);
+}
+
+.btn-outline {
+  background:transparent;
+  color:var(--blue);
+}
+
+.btn-outline:hover {
+  background:#83c8ff12;
+}
+
+.btn-green {
+  background:var(--green);
+  border-color:var(--green);
+  color:#072b16;
+}
+
+.btn-green:hover {
+  background:#5be88e;
+  box-shadow:0 10px 30px #25d36630;
+}
+
+.actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+  margin-top:28px;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
 
 .hero {
-  position: relative;
-  min-height: 650px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background:
-    radial-gradient(
-      ellipse at 85% 20%,
-      #183c61 0%,
-      transparent 48%
-    ),
-    linear-gradient(
-      135deg,#0e1725,#080d16
-    );
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.3fr .7fr;
-  align-items: center;
-  gap: 40px;
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  align-items:center;
+  gap:45px;
 }
 
 .hero p {
-  font-size: 18px;
-  color: var(--muted);
-  max-width: 680px;
+  color:var(--muted);
+  font-size:18px;
+  max-width:680px;
 }
 
 .hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 8px 14px;
-  background: #83c8ff0e;
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  color: var(--blue);
-  font-size: 11px;
-  letter-spacing: 2px;
-  font-weight: 800;
-  margin-bottom: 25px;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:8px 14px;
+  border-radius:30px;
+  background:#83c8ff0e;
+  border:1px solid var(--border);
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  margin-bottom:25px;
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
-  background: var(--blue);
-  border-radius: 50%;
-  box-shadow: 0 0 12px var(--blue);
+  width:8px;
+  height:8px;
+  background:var(--blue);
+  border-radius:50%;
+  box-shadow:0 0 12px var(--blue);
+  flex-shrink:0;
 }
 
 .hero-visual {
-  padding: 30px;
-  background: linear-gradient(
-    145deg,#1a304a,#0c1523
-  );
-  border: 1px solid #83c8ff45;
-  border-radius: 30px;
-  box-shadow: 0 30px 80px #0005;
+  padding:30px;
+  border-radius:28px;
 }
 
 .visual-label {
-  color: var(--blue);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2px;
 }
 
 .visual-title {
-  font-size: 29px;
-  font-weight: 900;
-  margin: 12px 0 25px;
-  line-height: 1.2;
+  font-size:32px;
+  font-weight:900;
+  line-height:1.2;
+  margin:12px 0 25px;
 }
 
 .visual-row {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  background: #ffffff07;
-  border: 1px solid #ffffff12;
-  border-radius: 13px;
-  padding: 15px;
-  margin-top: 12px;
-  transition:
-    transform .3s ease,
-    border-color .3s ease;
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:15px;
+  margin-top:12px;
+  background:#ffffff07;
+  border:1px solid #ffffff15;
+  border-radius:13px;
+  transition:transform .3s,border-color .3s;
 }
 
 .visual-row:hover {
-  transform: translateX(5px);
-  border-color: var(--blue);
+  transform:translateX(5px);
+  border-color:var(--blue);
 }
 
 .visual-icon {
-  width: 43px;
-  height: 43px;
-  display: grid;
-  place-items: center;
-  background: #83c8ff15;
-  border-radius: 10px;
-  font-size: 22px;
-  flex-shrink: 0;
+  display:grid;
+  place-items:center;
+  width:43px;
+  height:43px;
+  flex-shrink:0;
+  background:#83c8ff15;
+  border-radius:10px;
+  font-size:22px;
 }
 
 .visual-row strong {
-  display: block;
-  font-size: 14px;
+  display:block;
+  font-size:14px;
 }
 
 .visual-row small {
-  color: var(--muted);
-  font-size: 12px;
+  color:var(--muted);
+  font-size:12px;
 }
 
 .chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 35px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:30px;
 }
 
 .chip {
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  padding: 7px 13px;
-  font-size: 12px;
-  color: #cbd9e8;
-  transition: background .25s ease;
+  border:1px solid var(--border);
+  border-radius:30px;
+  padding:7px 13px;
+  color:#cbd9e8;
+  font-size:12px;
+  transition:background .25s;
 }
 
 .chip:hover {
-  background: #83c8ff18;
+  background:#83c8ff20;
 }
 
-/* ==========================================
-   PREMIUM CARDS
-========================================== */
+/* ========================================
+   PREMIUM GLASS CARDS
+======================================== */
 
 .grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
-  margin-top: 35px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:35px;
+}
+
+.card,
+.job,
+.hero-visual,
+.founder-card,
+.contact-form,
+.payment-box {
+  background:linear-gradient(
+    145deg,
+    rgba(26,47,72,.78),
+    rgba(10,20,34,.88)
+  );
+  border:1px solid var(--border);
+  box-shadow:
+    0 12px 35px #0003,
+    inset 0 1px 0 #ffffff08;
+  transition:
+    transform .35s,
+    box-shadow .35s,
+    border-color .35s;
 }
 
 .card {
-  position: relative;
-  background: linear-gradient(
-    145deg,#142238,#0e1827
-  );
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 28px;
-  transition:
-    transform .3s ease,
-    border-color .3s ease,
-    box-shadow .3s ease;
+  position:relative;
+  padding:28px;
+  border-radius:var(--radius);
+  overflow:hidden;
+}
+
+.card:hover,
+.job:hover,
+.hero-visual:hover,
+.founder-card:hover {
+  border-color:#83c8ff90;
+  box-shadow:
+    0 15px 40px #0005,
+    0 0 25px #3999ed20;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  border-color: #83c8ff80;
-  box-shadow: 0 16px 40px #0005;
+  transform:translateY(-6px);
 }
 
 .card h3 {
-  font-size: 21px;
+  font-size:21px;
 }
 
 .card p {
-  color: var(--muted);
-  font-size: 14px;
+  color:var(--muted);
+  font-size:14px;
 }
 
 .card-number {
-  color: var(--blue);
-  font-size: 11px;
-  letter-spacing: 2px;
-  font-weight: 800;
-  margin-bottom: 15px;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:15px;
 }
 
 .card-icon {
-  display: grid;
-  place-items: center;
-  width: 55px;
-  height: 55px;
-  background: #83c8ff12;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  font-size: 26px;
-  margin-bottom: 20px;
+  width:55px;
+  height:55px;
+  display:grid;
+  place-items:center;
+  background:#83c8ff12;
+  border:1px solid var(--border);
+  border-radius:14px;
+  font-size:26px;
+  margin-bottom:20px;
+  transition:transform .3s;
 }
 
-/* ==========================================
-   SERVICES
-========================================== */
+.card:hover .card-icon {
+  transform:scale(1.08);
+}
 
 .service-card {
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
 }
 
 .service-card p {
-  flex: 1;
+  flex:1;
 }
 
 .service-link {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--blue);
-  transition: color .25s ease;
+  display:inline-block;
+  color:var(--blue);
+  font-size:13px;
+  font-weight:800;
+  margin-top:20px;
 }
 
 .service-link:hover {
-  color: white;
+  color:white;
 }
 
-/* ==========================================
-   INTERNATIONAL MARKETS
-========================================== */
-
-.markets {
-  background: #0d1725;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* ========================================
+   MARKET CARDS
+======================================== */
 
 .market-card {
-  text-align: center;
-  padding: 35px 20px;
+  text-align:center;
+  padding:35px 20px;
 }
 
 .flag {
-  font-size: 60px;
-  display: block;
-  margin-bottom: 12px;
-  transition: transform .3s ease;
+  display:block;
+  font-size:60px;
+  margin-bottom:12px;
+  transition:transform .35s;
 }
 
-.market-card:hover .flag {
-  transform: scale(1.1);
+.market-card:hover .flag,
+.office-card:hover .flag {
+  transform:scale(1.1);
 }
 
-.market-card h3 {
-  font-size: 24px;
-}
-
-.solutions {
-  background: #0c1522;
-}
-
-/* ==========================================
+/* ========================================
    MY SKILLS - TOP 8
-========================================== */
-
-.skills {
-  background:
-    radial-gradient(
-      ellipse at top right,
-      #173451,
-      transparent 55%
-    ),
-    #0b1421;
-  border-top: 1px solid var(--border);
-}
+======================================== */
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 18px;
-  margin-top: 40px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:40px;
 }
 
 .skill-card {
-  overflow: hidden;
-  padding: 24px;
+  padding:24px;
 }
 
 .skill-card h3 {
-  font-size: 18px;
+  font-size:18px;
 }
 
 .skill-card p {
-  font-size: 13px;
+  font-size:13px;
 }
 
 .skill-line {
-  width: 40px;
-  height: 3px;
-  background: var(--blue);
-  border-radius: 10px;
-  margin-top: 22px;
-  transition: width .45s ease;
+  width:40px;
+  height:3px;
+  background:var(--blue);
+  border-radius:10px;
+  margin-top:22px;
+  box-shadow:0 0 12px #83c8ff50;
+  transition:width .5s;
 }
 
 .skill-card:hover .skill-line {
-  width: 100%;
+  width:100%;
 }
 
-/* ==========================================
-   WORKING EXPERIENCE TIMELINE
-========================================== */
-
-.experience {
-  background: #080d16;
-}
+/* ========================================
+   WORK EXPERIENCE TIMELINE
+======================================== */
 
 .timeline {
-  position: relative;
-  max-width: 950px;
-  margin: 45px auto 0;
-  padding-left: 40px;
+  position:relative;
+  max-width:950px;
+  margin:45px auto 0;
+  padding-left:40px;
 }
 
 .timeline::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  bottom: 15px;
-  left: 9px;
-  width: 2px;
-  background: linear-gradient(
+  content:"";
+  position:absolute;
+  top:15px;
+  bottom:15px;
+  left:9px;
+  width:2px;
+  background:linear-gradient(
     #83c8ff,#1b426a
   );
 }
 
 .job {
-  position: relative;
-  background: linear-gradient(
-    135deg,#142238,#0e1725
-  );
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 25px;
-  transition:
-    border-color .3s ease,
-    box-shadow .3s ease;
-}
-
-.job:hover {
-  border-color: #83c8ff90;
-  box-shadow: 0 12px 40px #83c8ff0a;
+  position:relative;
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:25px;
 }
 
 .job::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 35px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 3px solid #080d16;
-  background: var(--blue);
-  box-shadow: 0 0 15px #83c8ff70;
+  content:"";
+  position:absolute;
+  top:35px;
+  left:-39px;
+  width:16px;
+  height:16px;
+  background:var(--blue);
+  border:3px solid #080d16;
+  border-radius:50%;
+  box-shadow:0 0 15px #83c8ff80;
 }
 
 .job-date {
-  display: inline-block;
-  color: var(--blue);
-  background: #83c8ff12;
-  border: 1px solid var(--border);
-  padding: 6px 12px;
-  border-radius: 30px;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: 800;
+  display:inline-block;
+  color:var(--blue);
+  background:#83c8ff12;
+  border:1px solid var(--border);
+  padding:6px 12px;
+  border-radius:30px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
 }
 
 .job h3 {
-  font-size: 26px;
-  margin: 16px 0 5px;
+  font-size:26px;
+  margin:16px 0 5px;
 }
 
 .job-role {
-  font-size: 16px;
-  font-weight: 800;
-  color: var(--blue);
+  color:var(--blue);
+  font-size:16px;
+  font-weight:800;
 }
 
 .job p {
-  margin-top: 15px;
-  color: var(--muted);
-  font-size: 15px;
+  color:var(--muted);
+  font-size:15px;
+  margin-top:15px;
 }
 
 .job-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 18px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
 }
 
 .job-tags span {
-  background: #ffffff07;
-  border: 1px solid #ffffff15;
-  border-radius: 30px;
-  padding: 6px 11px;
-  font-size: 11px;
-  color: #c8d8e8;
+  background:#ffffff07;
+  border:1px solid #ffffff15;
+  border-radius:30px;
+  padding:6px 11px;
+  color:#c8d8e8;
+  font-size:11px;
 }
 
-/* ==========================================
-   NEW: PROJECTS & PAYMENT ASSURANCE
-========================================== */
-
-.trust-section {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(
-      ellipse at top right,
-      #193b60,
-      transparent 50%
-    ),
-    #080d16;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
+/* ========================================
+   PROJECTS & INTERNATIONAL OFFICES
+======================================== */
 
 .trust-heading {
-  text-align: center;
-  max-width: 850px;
-  margin: 0 auto 45px;
+  max-width:850px;
+  margin:0 auto 45px;
+  text-align:center;
 }
 
 .trust-heading p {
-  color: var(--muted);
+  color:var(--muted);
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 22px;
-  max-width: 900px;
-  margin: 0 auto 40px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  max-width:900px;
+  margin:0 auto 40px;
 }
 
 .stat-card {
-  text-align: center;
-  padding: 35px 25px;
-  background: linear-gradient(
-    145deg,#192d46,#101a29
-  );
+  padding:35px 25px;
+  text-align:center;
 }
 
 .stat-number {
-  display: block;
-  color: var(--blue);
-  font-size: clamp(42px,7vw,75px);
-  font-weight: 900;
-  line-height: 1.2;
-  text-shadow: 0 0 25px #83c8ff40;
+  display:block;
+  color:var(--blue);
+  font-size:clamp(42px,7vw,75px);
+  font-weight:900;
+  line-height:1.2;
+  text-shadow:0 0 25px #83c8ff40;
 }
 
 .stat-card h3 {
-  font-size: 22px;
-  margin: 12px 0;
+  margin:12px 0;
 }
 
 .payment-box {
-  position: relative;
-  overflow: hidden;
-  padding: 45px;
-  max-width: 1100px;
-  margin: auto;
-  border-radius: 28px;
-  border: 1px solid #83c8ff60;
-  background: linear-gradient(
-    135deg,#193451,#101b2b,#0b1421
-  );
-  box-shadow: 0 20px 70px #0005;
+  position:relative;
+  overflow:hidden;
+  max-width:1100px;
+  margin:auto;
+  padding:45px;
+  border-radius:28px;
+  border-color:#83c8ff60;
+  box-shadow:0 20px 70px #0005;
 }
 
-/* Animated Blue Shine */
+/* Moving Blue Border Shine */
 
 .payment-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #83c8ff,
-    transparent
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:60%;
+  height:2px;
+  background:linear-gradient(
+    90deg,transparent,#83c8ff,transparent
   );
-  transform: translateX(-110%);
-  animation: paymentShine 5s linear infinite;
-  pointer-events: none;
+  animation:paymentShine 6s linear infinite;
+  pointer-events:none;
 }
 
 @keyframes paymentShine {
-  0% {
-    transform: translateX(-110%);
+  from {
+    transform:translateX(-110%);
   }
-  100% {
-    transform: translateX(280%);
+  to {
+    transform:translateX(280%);
   }
 }
 
 .payment-title {
-  text-align: center;
-  max-width: 850px;
-  margin: auto;
+  max-width:850px;
+  margin:auto;
+  text-align:center;
 }
 
 .shield-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 75px;
-  height: 75px;
-  border-radius: 22px;
-  background: #83c8ff15;
-  border: 1px solid #83c8ff50;
-  font-size: 35px;
-  margin-bottom: 20px;
-  animation: shieldGlow 3s ease-in-out infinite;
+  display:inline-grid;
+  place-items:center;
+  width:75px;
+  height:75px;
+  background:#83c8ff15;
+  border:1px solid #83c8ff50;
+  border-radius:22px;
+  font-size:35px;
+  margin-bottom:20px;
+  animation:softGlow 4s ease-in-out infinite;
 }
 
-@keyframes shieldGlow {
+@keyframes softGlow {
   0%,100% {
-    box-shadow: 0 0 10px #83c8ff15;
+    box-shadow:0 0 10px #83c8ff15;
   }
   50% {
-    box-shadow: 0 0 28px #83c8ff50;
+    box-shadow:0 0 28px #83c8ff45;
   }
 }
 
 .payment-headline {
-  color: var(--blue);
-  font-size: clamp(23px,3.5vw,34px);
-  font-weight: 800;
-  line-height: 1.4;
-  margin: 20px 0;
+  color:var(--blue);
+  font-size:clamp(23px,3.5vw,34px);
+  font-weight:800;
+  line-height:1.4;
+  margin:20px 0;
 }
 
 .payment-title p {
-  color: #b8c8da;
-  font-size: 16px;
+  color:#b8c8da;
+  font-size:16px;
 }
 
 .office-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 25px;
-  margin-top: 40px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+  margin-top:40px;
 }
 
 .office-card {
-  text-align: center;
-  padding: 35px 25px;
-  background: linear-gradient(
-    145deg,#1b3550,#0c1828
-  );
-}
-
-.office-flag {
-  display: block;
-  font-size: 65px;
-  margin-bottom: 15px;
-  transition: transform .35s ease;
-}
-
-.office-card:hover .office-flag {
-  transform: scale(1.12);
+  text-align:center;
+  padding:35px 25px;
 }
 
 .office-label {
-  color: var(--blue);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  color:var(--blue);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
 }
 
 .office-card h3 {
-  font-size: 30px;
-  margin: 12px 0 5px;
+  font-size:30px;
+  margin:12px 0 5px;
 }
 
 .office-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  padding: 8px 14px;
-  border-radius: 30px;
-  border: 1px solid #83c8ff30;
-  background: #83c8ff10;
-  color: var(--blue);
-  font-size: 11px;
-  font-weight: 700;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:20px;
+  padding:8px 14px;
+  border-radius:30px;
+  background:#83c8ff10;
+  border:1px solid #83c8ff30;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:700;
 }
 
 .office-dot {
-  width: 7px;
-  height: 7px;
-  background: var(--blue);
-  border-radius: 50%;
-  flex-shrink: 0;
+  width:7px;
+  height:7px;
+  background:var(--blue);
+  border-radius:50%;
+  flex-shrink:0;
 }
 
 .payment-disclaimer {
-  margin-top: 35px;
-  padding: 22px;
-  background: #ffffff06;
-  border: 1px solid #ffffff15;
-  border-radius: 14px;
+  margin-top:35px;
+  padding:22px;
+  background:#ffffff06;
+  border:1px solid #ffffff15;
+  border-radius:14px;
 }
 
 .payment-disclaimer h4 {
-  color: var(--blue);
-  font-size: 14px;
-  margin-bottom: 8px;
+  color:var(--blue);
+  font-size:14px;
+  margin-bottom:8px;
 }
 
 .payment-disclaimer p {
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.8;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
 }
 
-/* ==========================================
+/* ========================================
    PORTFOLIO
-========================================== */
-
-.portfolio {
-  background: #0c1624;
-}
+======================================== */
 
 .work-card {
-  padding: 0;
-  overflow: hidden;
+  padding:0;
 }
 
 .work-art {
-  height: 205px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  background: linear-gradient(
+  height:205px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(
     135deg,#132438,#3678ae
   );
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  transition: filter .3s ease;
+  font-size:26px;
+  font-weight:900;
+  letter-spacing:-1px;
+  transition:filter .3s;
 }
 
 .work-card:nth-child(2) .work-art {
-  background: linear-gradient(
+  background:linear-gradient(
     135deg,#172033,#4c6fa1
   );
 }
 
 .work-card:nth-child(3) .work-art {
-  background: linear-gradient(
+  background:linear-gradient(
     135deg,#112a42,#53a9e8
   );
 }
 
 .work-card:hover .work-art {
-  filter: brightness(1.15);
+  filter:brightness(1.15);
 }
 
 .work-info {
-  padding: 24px;
+  padding:24px;
 }
 
 .note {
-  margin-top: 25px;
-  color: var(--muted);
-  font-size: 13px;
+  margin-top:25px;
+  color:var(--muted);
+  font-size:13px;
 }
 
-/* ==========================================
+/* ========================================
    ABOUT & FOUNDER PROFILE
-========================================== */
+======================================== */
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1.15fr .85fr;
-  gap: 50px;
-  align-items: center;
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  align-items:center;
+  gap:50px;
 }
 
 .about-grid p {
-  color: var(--muted);
-  margin-bottom: 16px;
+  color:var(--muted);
+  margin-bottom:16px;
 }
 
 .founder-card {
-  padding: 38px;
-  background: linear-gradient(
-    145deg,#1c3550,#0e1a2a
-  );
-  border: 1px solid #83c8ff40;
-  border-radius: 25px;
-  text-align: center;
+  padding:38px;
+  border-radius:25px;
+  text-align:center;
 }
 
-/* Original Profile Image */
-
 .founder-avatar {
-  position: relative;
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
-  background: #183451;
-  border: 4px solid #83c8ff;
-  margin: 0 auto 22px;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-  box-shadow: 0 0 30px #83c8ff35;
+  position:relative;
+  width:145px;
+  height:145px;
+  display:grid;
+  place-items:center;
+  margin:0 auto 22px;
+  overflow:hidden;
+  border-radius:50%;
+  background:#183451;
+  border:4px solid var(--blue);
+  animation:profileGlow 5s ease-in-out infinite;
 }
 
 .founder-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+}
+
+@keyframes profileGlow {
+  0%,100% {
+    box-shadow:0 0 20px #83c8ff35;
+  }
+  50% {
+    box-shadow:0 0 40px #83c8ff70;
+  }
 }
 
 .avatar-fallback {
-  color: var(--blue);
-  font-size: 38px;
-  font-weight: 900;
+  color:var(--blue);
+  font-size:38px;
+  font-weight:900;
 }
 
 .founder-card h3 {
-  font-size: 25px;
+  font-size:25px;
 }
 
 .founder-role {
-  color: var(--blue);
-  font-weight: 800;
-  font-size: 14px;
+  color:var(--blue);
+  font-weight:800;
+  font-size:14px;
 }
 
 .founder-card hr {
-  border: 0;
-  border-top: 1px solid var(--border);
-  margin: 22px 0;
+  border:0;
+  border-top:1px solid var(--border);
+  margin:22px 0;
 }
 
 .founder-card p {
-  font-size: 14px;
-  margin: 0;
+  font-size:14px;
+  margin:0;
 }
 
-/* 3 YEARS EXPERIENCE BADGE */
-
 .experience-badge {
-  position: relative;
-  overflow: hidden;
-  margin: 22px 0;
-  padding: 24px 16px;
-  border: 1px solid #83c8ff60;
-  border-radius: 16px;
-  background: linear-gradient(
+  margin:22px 0;
+  padding:24px 16px;
+  background:linear-gradient(
     135deg,#183451,#101c2d
   );
-  text-align: center;
-  animation: experienceGlow 4s ease-in-out infinite;
+  border:1px solid #83c8ff60;
+  border-radius:16px;
+  animation:softGlow 5s ease-in-out infinite;
 }
 
 .experience-years {
-  display: block;
-  color: var(--blue);
-  font-size: 40px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  line-height: 1.2;
-  text-shadow: 0 0 18px #83c8ff40;
+  display:block;
+  color:var(--blue);
+  font-size:40px;
+  font-weight:900;
+  letter-spacing:2px;
+  line-height:1.2;
+  text-shadow:0 0 18px #83c8ff40;
 }
 
 .experience-badge strong {
-  display: block;
-  color: white;
-  font-size: 17px;
-  margin: 8px 0 5px;
+  display:block;
+  color:white;
+  font-size:17px;
+  margin:8px 0 5px;
 }
 
 .experience-badge small {
-  color: var(--muted);
-  font-size: 13px;
+  color:var(--muted);
+  font-size:13px;
 }
 
-@keyframes experienceGlow {
-  0%,100% {
-    box-shadow: 0 0 8px #83c8ff15;
-  }
-  50% {
-    box-shadow: 0 0 22px #83c8ff40;
-  }
-}
-
-/* ==========================================
+/* ========================================
    CONTACT FORM
-========================================== */
-
-.contact {
-  background: linear-gradient(
-    135deg,#10243b,#080d16
-  );
-}
+======================================== */
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 45px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
 }
 
 .contact-details {
-  margin-top: 25px;
+  margin-top:25px;
 }
 
 .contact-item {
-  margin-bottom: 17px;
+  margin-bottom:17px;
 }
 
 .contact-item small {
-  display: block;
-  font-size: 11px;
-  letter-spacing: 1px;
-  color: var(--blue);
-  text-transform: uppercase;
+  display:block;
+  color:var(--blue);
+  font-size:11px;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 
 .contact-item a,
 .contact-item strong {
-  font-size: 15px;
-  overflow-wrap: anywhere;
+  font-size:15px;
+  overflow-wrap:anywhere;
 }
 
 .contact-form {
-  display: grid;
-  gap: 12px;
-  padding: 30px;
-  background: #101c2d;
-  border: 1px solid var(--border);
-  border-radius: 20px;
+  display:grid;
+  gap:12px;
+  padding:30px;
+  border-radius:20px;
 }
 
 .contact-form label {
-  font-size: 13px;
-  font-weight: 700;
-  color: #d5e3f1;
+  color:#d5e3f1;
+  font-size:13px;
+  font-weight:700;
 }
 
 .contact-form input,
-.contact-form textarea,
-.contact-form select {
-  width: 100%;
-  background: #0a1422;
-  color: white;
-  border: 1px solid #83c8ff30;
-  border-radius: 9px;
-  padding: 13px;
-  font-size: 14px;
-  transition: border-color .25s ease;
+.contact-form select,
+.contact-form textarea {
+  width:100%;
+  padding:13px;
+  background:#0a1422;
+  color:white;
+  border:1px solid #83c8ff30;
+  border-radius:9px;
+  font-size:14px;
+  transition:border-color .25s;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
-  border-color: var(--blue);
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color:var(--blue);
 }
 
 .contact-form textarea {
-  min-height: 120px;
-  resize: vertical;
+  min-height:120px;
+  resize:vertical;
 }
 
 .contact-form small {
-  color: var(--muted);
-  font-size: 12px;
+  color:var(--muted);
+  font-size:12px;
 }
 
-/* ==========================================
+/* ========================================
    FOOTER & WHATSAPP
-========================================== */
+======================================== */
 
 footer {
-  border-top: 1px solid var(--border);
-  padding: 35px 0 85px;
-  background: #060a11;
+  padding:35px 0 85px;
+  background:#060a11d9;
+  border-top:1px solid var(--border);
 }
 
 .footer-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
 }
 
 .footer-grid p {
-  color: var(--muted);
-  font-size: 13px;
+  color:var(--muted);
+  font-size:13px;
 }
 
 .float-wa {
-  position: fixed;
-  right: 22px;
-  bottom: 22px;
-  z-index: 1500;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 14px 21px;
-  border-radius: 50px;
-  background: var(--green);
-  color: #082b17;
-  font-size: 14px;
-  font-weight: 800;
-  box-shadow: 0 8px 35px #0006;
-  transition: transform .25s ease;
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:1500;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:14px 21px;
+  border-radius:50px;
+  background:var(--green);
+  color:#082b17;
+  font-size:14px;
+  font-weight:800;
+  box-shadow:0 8px 35px #0006;
+  transition:transform .25s;
 }
 
 .float-wa:hover {
-  transform: translateY(-5px);
+  transform:translateY(-5px);
 }
 
-/* ==========================================
-   SMOOTH & STABLE ANIMATIONS
-========================================== */
+/* ========================================
+   SMOOTH SCROLL REVEAL
+======================================== */
 
 .reveal-ready {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity:0;
+  transform:translateY(24px);
   transition:
     opacity .65s ease,
-    transform .65s ease;
-  transition-delay: var(--delay,0ms);
+    transform .65s ease,
+    border-color .35s,
+    box-shadow .35s;
+  transition-delay:var(--delay,0ms);
 }
 
 .reveal-ready.visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity:1;
+  transform:translateY(0);
 }
 
 .card.reveal-ready.visible:hover {
-  transform: translateY(-6px);
+  transform:translateY(-6px);
 }
 
-/* ==========================================
-   RESPONSIVE DESIGN
-========================================== */
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
 
-@media (max-width:1150px) {
+@media(max-width:1150px) {
 
   nav {
-    gap: 11px;
+    gap:10px;
   }
 
   nav a {
-    font-size: 12px;
+    font-size:12px;
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr);
   }
 
   .hero-grid {
-    grid-template-columns: 1.1fr .9fr;
-    gap: 25px;
+    grid-template-columns:1.1fr .9fr;
+    gap:25px;
   }
 
 }
 
-@media (max-width:950px) {
+@media(max-width:950px) {
 
   .navbar {
-    min-height: 75px;
-    flex-wrap: wrap;
-    gap: 0;
+    min-height:75px;
+    flex-wrap:wrap;
+    gap:0;
   }
 
   .menu-btn {
-    display: block;
+    display:block;
   }
 
   nav {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    padding: 10px 0 20px;
-    max-height: 70vh;
-    overflow-y: auto;
+    display:none;
+    width:100%;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    padding:10px 0 20px;
+    max-height:70vh;
+    overflow-y:auto;
   }
 
   nav.open {
-    display: flex;
-    animation: menuReveal .25s ease;
+    display:flex;
+    animation:menuReveal .25s ease;
   }
 
   nav a {
-    font-size: 14px;
-    padding: 11px 8px;
-    border-bottom: 1px solid #ffffff0a;
+    padding:11px 8px;
+    font-size:14px;
+    border-bottom:1px solid #ffffff0a;
   }
 
   nav a::after {
-    width: 45px;
-    left: 8px;
+    width:45px;
+    left:8px;
   }
 
   .hero-grid,
   .about-grid,
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
 
   .hero {
-    min-height: auto;
+    min-height:auto;
   }
 
   .grid-3 {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr);
   }
 
   .hero-visual {
-    max-width: 600px;
+    max-width:600px;
   }
 
 }
 
 @keyframes menuReveal {
   from {
-    opacity: 0;
-    transform: translateY(-8px);
+    opacity:0;
+    transform:translateY(-8px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity:1;
+    transform:translateY(0);
   }
 }
 
-@media (max-width:650px) {
+/* ========================================
+   MOBILE PERFORMANCE
+======================================== */
+
+@media(max-width:650px) {
 
   section {
-    padding: 60px 0;
+    padding:60px 0;
   }
 
   .hero {
-    padding: 65px 0;
+    padding:65px 0;
   }
 
   h1 {
-    font-size: 44px;
-    letter-spacing: -2px;
+    font-size:44px;
+    letter-spacing:-2px;
   }
 
   h2 {
-    font-size: 33px;
+    font-size:33px;
   }
 
   .hero p {
-    font-size: 16px;
+    font-size:16px;
   }
 
   .logo-main {
-    font-size: 29px;
+    font-size:29px;
   }
 
   .logo-sub {
-    font-size: 8px;
-    letter-spacing: 4px;
+    font-size:8px;
+    letter-spacing:4px;
   }
 
   .grid-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2,1fr);
-    gap: 12px;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
   }
 
   .skill-card {
-    padding: 18px 13px;
+    padding:18px 13px;
   }
 
   .skill-card h3 {
-    font-size: 16px;
+    font-size:16px;
   }
 
   .skill-card p {
-    font-size: 12px;
+    font-size:12px;
   }
 
   .hero-visual {
-    padding: 22px;
+    padding:22px;
   }
 
   .timeline {
-    padding-left: 30px;
+    padding-left:30px;
   }
 
   .timeline::before {
-    left: 6px;
+    left:6px;
   }
 
   .job {
-    padding: 22px;
+    padding:22px;
   }
 
   .job::before {
-    left: -31px;
+    left:-31px;
   }
 
   .job h3 {
-    font-size: 22px;
+    font-size:22px;
   }
 
   .job-role {
-    font-size: 14px;
+    font-size:14px;
   }
 
   .stats-grid {
-    gap: 12px;
+    gap:12px;
   }
 
   .stat-card {
-    padding: 25px 12px;
+    padding:25px 12px;
   }
 
   .stat-card h3 {
-    font-size: 17px;
+    font-size:17px;
   }
 
   .stat-card p {
-    font-size: 12px;
+    font-size:12px;
   }
 
   .payment-box {
-    padding: 25px 18px;
+    padding:25px 18px;
   }
 
   .office-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns:1fr;
+    gap:18px;
   }
 
   .office-card {
-    padding: 28px 20px;
-  }
-
-  .contact-form {
-    padding: 22px;
+    padding:28px 20px;
   }
 
   .founder-card {
-    padding: 25px;
+    padding:25px;
+  }
+
+  .contact-form {
+    padding:22px;
   }
 
   .experience-years {
-    font-size: 35px;
+    font-size:35px;
   }
 
   .float-wa {
-    right: 12px;
-    bottom: 12px;
-    font-size: 13px;
-    padding: 12px 16px;
+    right:12px;
+    bottom:12px;
+    padding:12px 16px;
+    font-size:13px;
+  }
+
+  .glow-one {
+    width:380px;
+    height:380px;
+    top:-100px;
+    right:-150px;
+  }
+
+  .glow-two {
+    width:350px;
+    height:350px;
+    bottom:-100px;
+    left:-100px;
+  }
+
+  .glow-three {
+    display:none;
+  }
+
+  .tech-grid {
+    background-size:40px 40px;
+  }
+
+  .light-beam {
+    opacity:.5;
+  }
+
+  .particle:nth-child(n+13) {
+    display:none;
   }
 
 }
 
-@media (max-width:350px) {
+@media(max-width:350px) {
 
   .skills-grid,
   .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
 
 }
 
-/* ACCESSIBILITY */
+/* Accessibility: Reduced Motion */
 
-@media (prefers-reduced-motion:reduce) {
+@media(prefers-reduced-motion:reduce) {
 
   html {
-    scroll-behavior: auto !important;
+    scroll-behavior:auto!important;
   }
 
   *,
   *::before,
   *::after {
-    animation: none !important;
-    transition: none !important;
+    animation:none!important;
+    transition:none!important;
   }
 
   .reveal-ready {
-    opacity: 1 !important;
-    transform: none !important;
+    opacity:1!important;
+    transform:none!important;
   }
 
 }
@@ -1525,18 +1638,33 @@ footer {
 
 <body>
 
+<!-- FULL WEBSITE ANIMATED BACKGROUND -->
+
+<div class="premium-bg" aria-hidden="true">
+
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+  <div class="glow glow-three"></div>
+
+  <div class="tech-grid"></div>
+
+  <div class="light-beam"></div>
+
+  <div class="particles" id="particles"></div>
+
+</div>
+
 <div id="progress" aria-hidden="true"></div>
 
-<!-- ==========================================
+<!-- ========================================
      HEADER
-========================================== -->
+======================================== -->
 
 <header>
 
   <div class="wrap navbar">
 
-    <a class="logo"
-       href="#home"
+    <a class="logo" href="#home"
        aria-label="Pavi Solutions Home">
 
       <span class="logo-main">
@@ -1578,9 +1706,9 @@ footer {
 
 <main>
 
-<!-- ==========================================
-     HOME / HERO
-========================================== -->
+<!-- ========================================
+     HERO
+======================================== -->
 
 <section class="hero" id="home">
 
@@ -1637,11 +1765,11 @@ footer {
 
       <div class="chips reveal">
 
-        <span class="chip">Amazon</span>
-        <span class="chip">eBay</span>
-        <span class="chip">TikTok Shop</span>
-        <span class="chip">Temu</span>
-        <span class="chip">SEO & PPC</span>
+        <a class="chip" href="#amazon">Amazon</a>
+        <a class="chip" href="#ebay">eBay</a>
+        <a class="chip" href="#tiktok">TikTok Shop</a>
+        <a class="chip" href="#temu">Temu</a>
+        <a class="chip" href="#seo">SEO & PPC</a>
 
       </div>
 
@@ -1703,9 +1831,9 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      SERVICES
-========================================== -->
+======================================== -->
 
 <section id="services">
 
@@ -1734,13 +1862,11 @@ footer {
 
     <div class="grid-3">
 
-      <article class="card service-card reveal">
+      <article class="card service-card reveal"
+               id="amazon">
 
         <div class="card-icon">🛒</div>
-
-        <div class="card-number">
-          01 / MARKETPLACE
-        </div>
+        <div class="card-number">01 / MARKETPLACE</div>
 
         <h3>Amazon Management</h3>
 
@@ -1761,13 +1887,11 @@ footer {
 
       </article>
 
-      <article class="card service-card reveal">
+      <article class="card service-card reveal"
+               id="ebay">
 
         <div class="card-icon">🏪</div>
-
-        <div class="card-number">
-          02 / MARKETPLACE
-        </div>
+        <div class="card-number">02 / MARKETPLACE</div>
 
         <h3>eBay Management</h3>
 
@@ -1788,20 +1912,18 @@ footer {
 
       </article>
 
-      <article class="card service-card reveal">
+      <article class="card service-card reveal"
+               id="tiktok">
 
         <div class="card-icon">📱</div>
-
-        <div class="card-number">
-          03 / SOCIAL COMMERCE
-        </div>
+        <div class="card-number">03 / SOCIAL COMMERCE</div>
 
         <h3>TikTok Shop</h3>
 
         <p>
-          Shop management, product listing
-          creation, promotional strategies
-          and TikTok advertising support.
+          Shop management, product listings,
+          promotional strategies and
+          TikTok advertising support.
         </p>
 
         <a class="service-link"
@@ -1814,13 +1936,11 @@ footer {
 
       </article>
 
-      <article class="card service-card reveal">
+      <article class="card service-card reveal"
+               id="temu">
 
         <div class="card-icon">📦</div>
-
-        <div class="card-number">
-          04 / E-COMMERCE
-        </div>
+        <div class="card-number">04 / E-COMMERCE</div>
 
         <h3>Temu & Store Operations</h3>
 
@@ -1841,21 +1961,18 @@ footer {
 
       </article>
 
-      <article class="card service-card reveal">
+      <article class="card service-card reveal"
+               id="seo">
 
         <div class="card-icon">📊</div>
-
-        <div class="card-number">
-          05 / PERFORMANCE
-        </div>
+        <div class="card-number">05 / PERFORMANCE</div>
 
         <h3>SEO & Paid Advertising</h3>
 
         <p>
-          Keyword strategy, search
-          optimisation, Amazon PPC,
-          Google Ads and Facebook
-          advertising campaign support.
+          Keyword strategy, search optimisation,
+          Amazon PPC, Google Ads and
+          Facebook advertising support.
         </p>
 
         <a class="service-link"
@@ -1871,18 +1988,15 @@ footer {
       <article class="card service-card reveal">
 
         <div class="card-icon">🎨</div>
-
-        <div class="card-number">
-          06 / CREATIVE
-        </div>
+        <div class="card-number">06 / CREATIVE</div>
 
         <h3>Social Media & Design</h3>
 
         <p>
-          Promotional posters, social
-          media content, Facebook and
-          Instagram marketing, brand
-          identity and professional design.
+          Promotional posters, social media
+          content, Facebook and Instagram
+          marketing, brand identity and
+          professional design.
         </p>
 
         <a class="service-link"
@@ -1901,11 +2015,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      INTERNATIONAL MARKETS
-========================================== -->
+======================================== -->
 
-<section class="markets" id="markets">
+<section id="markets">
 
   <div class="wrap">
 
@@ -1916,19 +2030,16 @@ footer {
     <h2 class="reveal">
 
       Local expertise.
-      <span class="accent">
-        Global opportunities.
-      </span>
+      <span class="accent">Global opportunities.</span>
 
     </h2>
 
     <p class="section-intro reveal">
 
-      We welcome businesses from the
-      United Kingdom, Ireland and Canada,
-      offering digital marketing and
-      e-commerce support tailored to
-      each market.
+      We welcome businesses from the United
+      Kingdom, Ireland and Canada, offering
+      digital marketing and e-commerce
+      support tailored to each market.
 
     </p>
 
@@ -1978,7 +2089,7 @@ footer {
     <div class="actions reveal">
 
       <a class="btn btn-green"
-         href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20discuss%20international%20e-commerce%20support."
+         href="https://wa.me/94756272065"
          target="_blank"
          rel="noopener noreferrer">
 
@@ -1992,11 +2103,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      ONE-TIME SERVICES
-========================================== -->
+======================================== -->
 
-<section class="solutions" id="solutions">
+<section id="solutions">
 
   <div class="wrap">
 
@@ -2025,10 +2136,7 @@ footer {
       <article class="card reveal">
 
         <div class="card-icon">⚡</div>
-
-        <div class="card-number">
-          01 / ONE-TIME
-        </div>
+        <div class="card-number">01 / ONE-TIME</div>
 
         <h3>One-Time Service Delivery</h3>
 
@@ -2043,10 +2151,7 @@ footer {
       <article class="card reveal">
 
         <div class="card-icon">📈</div>
-
-        <div class="card-number">
-          02 / SALES FOCUS
-        </div>
+        <div class="card-number">02 / SALES FOCUS</div>
 
         <h3>Sales-Focused Marketing</h3>
 
@@ -2063,10 +2168,7 @@ footer {
       <article class="card reveal">
 
         <div class="card-icon">💎</div>
-
-        <div class="card-number">
-          03 / BRANDING
-        </div>
+        <div class="card-number">03 / BRANDING</div>
 
         <h3>Premium Brand Identity</h3>
 
@@ -2097,11 +2199,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      MY SKILLS - TOP 8
-========================================== -->
+======================================== -->
 
-<section class="skills" id="skills">
+<section id="skills">
 
   <div class="wrap">
 
@@ -2130,17 +2232,14 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">🛒</div>
-
-        <div class="card-number">
-          01 / SKILL
-        </div>
+        <div class="card-number">01 / SKILL</div>
 
         <h3>Amazon Seller Central</h3>
 
         <p>
           Amazon UK and Ireland marketplace
-          management, product listings and
-          account support.
+          management, listings and account
+          support.
         </p>
 
         <div class="skill-line"></div>
@@ -2150,10 +2249,7 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">🏪</div>
-
-        <div class="card-number">
-          02 / SKILL
-        </div>
+        <div class="card-number">02 / SKILL</div>
 
         <h3>eBay Management</h3>
 
@@ -2170,17 +2266,13 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">📱</div>
-
-        <div class="card-number">
-          03 / SKILL
-        </div>
+        <div class="card-number">03 / SKILL</div>
 
         <h3>TikTok Shop & Temu</h3>
 
         <p>
-          Marketplace operations, product
-          catalogue management and
-          promotional support.
+          Marketplace operations, catalogue
+          management and promotional support.
         </p>
 
         <div class="skill-line"></div>
@@ -2190,17 +2282,14 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">🔍</div>
-
-        <div class="card-number">
-          04 / SKILL
-        </div>
+        <div class="card-number">04 / SKILL</div>
 
         <h3>SEO & Listing Optimisation</h3>
 
         <p>
           Keyword research, SEO titles,
           descriptions, A+ content and
-          product search visibility.
+          search visibility.
         </p>
 
         <div class="skill-line"></div>
@@ -2210,17 +2299,14 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">📈</div>
-
-        <div class="card-number">
-          05 / SKILL
-        </div>
+        <div class="card-number">05 / SKILL</div>
 
         <h3>PPC & Digital Advertising</h3>
 
         <p>
           Amazon PPC fundamentals,
-          advertising campaign setup
-          and performance monitoring.
+          campaign setup and performance
+          monitoring.
         </p>
 
         <div class="skill-line"></div>
@@ -2230,10 +2316,7 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">🌐</div>
-
-        <div class="card-number">
-          06 / SKILL
-        </div>
+        <div class="card-number">06 / SKILL</div>
 
         <h3>Social Media Marketing</h3>
 
@@ -2250,10 +2333,7 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">🎨</div>
-
-        <div class="card-number">
-          07 / SKILL
-        </div>
+        <div class="card-number">07 / SKILL</div>
 
         <h3>Graphic Design & Branding</h3>
 
@@ -2270,10 +2350,7 @@ footer {
       <article class="card skill-card reveal">
 
         <div class="card-icon">📊</div>
-
-        <div class="card-number">
-          08 / SKILL
-        </div>
+        <div class="card-number">08 / SKILL</div>
 
         <h3>E-commerce Operations</h3>
 
@@ -2293,11 +2370,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      WORKING EXPERIENCE
-========================================== -->
+======================================== -->
 
-<section class="experience" id="experience">
+<section id="experience">
 
   <div class="wrap">
 
@@ -2308,9 +2385,7 @@ footer {
     <h2 class="reveal">
 
       Working Experience.
-      <span class="accent">
-        My career journey.
-      </span>
+      <span class="accent">My career journey.</span>
 
     </h2>
 
@@ -2393,7 +2468,7 @@ footer {
 
       </article>
 
-      <!-- AMAZON IRELAND ACCOUNT HOLDER -->
+      <!-- AMAZON IRELAND -->
 
       <article class="job reveal">
 
@@ -2432,7 +2507,7 @@ footer {
       <article class="job reveal">
 
         <span class="job-date">
-          2024 • E-COMMERCE CAREER START
+          2024 • CAREER START
         </span>
 
         <h3>DigitWeb Lanka</h3>
@@ -2469,11 +2544,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
-     NEW: PROJECTS & INTERNATIONAL OFFICES
-========================================== -->
+<!-- ========================================
+     PROJECTS & INTERNATIONAL OFFICES
+======================================== -->
 
-<section class="trust-section" id="achievements">
+<section id="achievements">
 
   <div class="wrap">
 
@@ -2499,7 +2574,7 @@ footer {
 
     </div>
 
-    <!-- ANIMATED PROJECT COUNTERS -->
+    <!-- Animated Number Counters -->
 
     <div class="stats-grid">
 
@@ -2526,7 +2601,6 @@ footer {
         <span class="stat-number">
 
           <span data-count="3">3</span>
-
           Years
 
         </span>
@@ -2543,15 +2617,13 @@ footer {
 
     </div>
 
-    <!-- PAYMENT ASSURANCE -->
+    <!-- International Payment Assurance -->
 
     <div class="payment-box reveal">
 
       <div class="payment-title">
 
-        <div class="shield-icon">
-          🛡️
-        </div>
+        <div class="shield-icon">🛡️</div>
 
         <div class="eyebrow">
           Customer Confidence & Flexible Payment
@@ -2560,9 +2632,7 @@ footer {
         <h2>
 
           Your Trust.
-          <span class="accent">
-            Our Priority.
-          </span>
+          <span class="accent">Our Priority.</span>
 
         </h2>
 
@@ -2590,17 +2660,13 @@ footer {
 
       </div>
 
-      <!-- UK & CANADA OFFICES -->
+      <!-- OFFICE LOCATIONS -->
 
       <div class="office-grid">
 
-        <!-- UK OFFICE -->
-
         <article class="card office-card reveal">
 
-          <span class="office-flag">
-            🇬🇧
-          </span>
+          <span class="flag">🇬🇧</span>
 
           <div class="office-label">
             United Kingdom Office
@@ -2608,9 +2674,7 @@ footer {
 
           <h3>Stevenage</h3>
 
-          <p>
-            Hertfordshire, United Kingdom
-          </p>
+          <p>Hertfordshire, United Kingdom</p>
 
           <div class="office-status">
 
@@ -2624,7 +2688,7 @@ footer {
                style="justify-content:center">
 
             <a class="btn btn-outline"
-               href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20Stevenage%20UK%20office%20and%20payment%20arrangements."
+               href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20Stevenage%20UK%20office."
                target="_blank"
                rel="noopener noreferrer">
 
@@ -2636,13 +2700,9 @@ footer {
 
         </article>
 
-        <!-- CANADA OFFICE -->
-
         <article class="card office-card reveal">
 
-          <span class="office-flag">
-            🇨🇦
-          </span>
+          <span class="flag">🇨🇦</span>
 
           <div class="office-label">
             Canada Office
@@ -2650,9 +2710,7 @@ footer {
 
           <h3>Ontario</h3>
 
-          <p>
-            Ontario, Canada
-          </p>
+          <p>Ontario, Canada</p>
 
           <div class="office-status">
 
@@ -2666,7 +2724,7 @@ footer {
                style="justify-content:center">
 
             <a class="btn btn-outline"
-               href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20Ontario%20Canada%20office%20and%20payment%20arrangements."
+               href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20enquire%20about%20your%20Ontario%20Canada%20office."
                target="_blank"
                rel="noopener noreferrer">
 
@@ -2680,7 +2738,7 @@ footer {
 
       </div>
 
-      <!-- POLITE PROFESSIONAL DISCLAIMER -->
+      <!-- POLITE PAYMENT DISCLAIMER -->
 
       <div class="payment-disclaimer">
 
@@ -2739,11 +2797,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      PORTFOLIO
-========================================== -->
+======================================== -->
 
-<section class="portfolio" id="portfolio">
+<section id="portfolio">
 
   <div class="wrap">
 
@@ -2754,9 +2812,7 @@ footer {
     <h2 class="reveal">
 
       Creative work.
-      <span class="accent">
-        Practical solutions.
-      </span>
+      <span class="accent">Practical solutions.</span>
 
     </h2>
 
@@ -2846,9 +2902,9 @@ footer {
 
 </section>
 
-<!-- ==========================================
-     ABOUT FOUNDER - ORIGINAL PROFILE IMAGE
-========================================== -->
+<!-- ========================================
+     ABOUT & FOUNDER
+======================================== -->
 
 <section id="about">
 
@@ -2863,9 +2919,7 @@ footer {
       <h2 class="reveal">
 
         Your partner in
-        <span class="accent">
-          digital growth.
-        </span>
+        <span class="accent">digital growth.</span>
 
       </h2>
 
@@ -2926,22 +2980,22 @@ footer {
 
         <img src="profile.jpeg"
              alt="Hematharan Piraiyzhahan - Founder of Pavi Solutions"
-             width="135"
-             height="135"
+             width="145"
+             height="145"
              loading="lazy"
              id="profileImage">
 
         <span class="avatar-fallback"
               id="avatarFallback"
               hidden>
+
           HP
+
         </span>
 
       </div>
 
-      <h3>
-        Hematharan Piraiyzhahan
-      </h3>
+      <h3>Hematharan Piraiyzhahan</h3>
 
       <div class="founder-role">
         Founder & CEO
@@ -2955,17 +3009,13 @@ footer {
         E-commerce & Digital Marketing Specialist
       </p>
 
-      <!-- 3 YEARS EXPERIENCE -->
-
       <div class="experience-badge">
 
         <span class="experience-years">
           3 YEARS
         </span>
 
-        <strong>
-          Professional Experience
-        </strong>
+        <strong>Professional Experience</strong>
 
         <small>
           In Digital Marketing & E-commerce
@@ -2973,9 +3023,7 @@ footer {
 
       </div>
 
-      <p style="margin-top:15px">
-        📍 Jaffna, Sri Lanka
-      </p>
+      <p>📍 Jaffna, Sri Lanka</p>
 
       <div class="actions"
            style="justify-content:center">
@@ -2995,11 +3043,11 @@ footer {
 
 </section>
 
-<!-- ==========================================
+<!-- ========================================
      CONTACT
-========================================== -->
+======================================== -->
 
-<section class="contact" id="contact">
+<section id="contact">
 
   <div class="wrap contact-grid">
 
@@ -3012,9 +3060,7 @@ footer {
       <h2 class="reveal">
 
         Ready to grow
-        <span class="accent">
-          your business?
-        </span>
+        <span class="accent">your business?</span>
 
       </h2>
 
@@ -3034,9 +3080,7 @@ footer {
 
           <small>Founder</small>
 
-          <strong>
-            Hematharan Piraiyzhahan
-          </strong>
+          <strong>Hematharan Piraiyzhahan</strong>
 
         </div>
 
@@ -3045,9 +3089,7 @@ footer {
           <small>Email Address</small>
 
           <a href="mailto:piraiyzhahan1019@gmail.com">
-
             piraiyzhahan1019@gmail.com
-
           </a>
 
         </div>
@@ -3057,9 +3099,7 @@ footer {
           <small>Phone / WhatsApp</small>
 
           <a href="tel:+94756272065">
-
             +94 75 627 2065
-
           </a>
 
         </div>
@@ -3068,9 +3108,7 @@ footer {
 
           <small>Business Base</small>
 
-          <strong>
-            Jaffna, Sri Lanka
-          </strong>
+          <strong>Jaffna, Sri Lanka</strong>
 
         </div>
 
@@ -3102,7 +3140,7 @@ footer {
       <div class="actions reveal">
 
         <a class="btn btn-green"
-           href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20have%20a%20business%20enquiry."
+           href="https://wa.me/94756272065"
            target="_blank"
            rel="noopener noreferrer">
 
@@ -3121,9 +3159,7 @@ footer {
 
       <h3>Send an Enquiry</h3>
 
-      <label for="name">
-        Your Name
-      </label>
+      <label for="name">Your Name</label>
 
       <input id="name"
              type="text"
@@ -3131,25 +3167,18 @@ footer {
              maxlength="100"
              required>
 
-      <label for="business">
-        Business Name
-      </label>
+      <label for="business">Business Name</label>
 
       <input id="business"
              type="text"
              placeholder="Your business name"
              maxlength="100">
 
-      <label for="country">
-        Your Country
-      </label>
+      <label for="country">Your Country</label>
 
       <select id="country" required>
 
-        <option value="">
-          Please select your country
-        </option>
-
+        <option value="">Please select your country</option>
         <option>United Kingdom</option>
         <option>Ireland</option>
         <option>Canada</option>
@@ -3158,16 +3187,11 @@ footer {
 
       </select>
 
-      <label for="service">
-        Select Service
-      </label>
+      <label for="service">Select Service</label>
 
       <select id="service" required>
 
-        <option value="">
-          Please choose a service
-        </option>
-
+        <option value="">Please choose a service</option>
         <option>Amazon Management</option>
         <option>eBay Management</option>
         <option>TikTok Shop</option>
@@ -3185,21 +3209,10 @@ footer {
 
       <select id="payment">
 
-        <option>
-          Discuss Payment Options
-        </option>
-
-        <option>
-          UK Office - Stevenage
-        </option>
-
-        <option>
-          Canada Office - Ontario
-        </option>
-
-        <option>
-          Online Payment
-        </option>
+        <option>Discuss Payment Options</option>
+        <option>UK Office - Stevenage</option>
+        <option>Canada Office - Ontario</option>
+        <option>Online Payment</option>
 
       </select>
 
@@ -3237,9 +3250,9 @@ footer {
 
 </main>
 
-<!-- ==========================================
+<!-- ========================================
      FOOTER
-========================================== -->
+======================================== -->
 
 <footer>
 
@@ -3259,7 +3272,7 @@ footer {
 
     <p>
 
-      © <span id="year"></span>
+      © <span id="year">2026</span>
       Pavi Solutions. All rights reserved.
 
     </p>
@@ -3272,7 +3285,7 @@ footer {
 
 </footer>
 
-<!-- FLOATING WHATSAPP -->
+<!-- FLOATING WHATSAPP BUTTON -->
 
 <a class="float-wa"
    href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
@@ -3284,9 +3297,9 @@ footer {
 
 </a>
 
-<!-- ==========================================
-     FINAL JAVASCRIPT SYSTEM
-========================================== -->
+<!-- ========================================
+     FINAL JAVASCRIPT
+======================================== -->
 
 <script>
 
@@ -3297,9 +3310,62 @@ footer {
 document.getElementById("year").textContent =
   new Date().getFullYear();
 
-/* ==========================================
+/* REDUCED MOTION */
+
+const reducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
+
+/* ========================================
+   PREMIUM BACKGROUND PARTICLES
+======================================== */
+
+const particles =
+  document.getElementById("particles");
+
+if (!reducedMotion) {
+
+  const particleCount =
+    window.innerWidth <= 650 ? 12 : 28;
+
+  for (let i = 0; i < particleCount; i++) {
+
+    const particle =
+      document.createElement("span");
+
+    particle.className = "particle";
+
+    particle.style.left =
+      Math.random() * 100 + "%";
+
+    particle.style.top =
+      Math.random() * 100 + "%";
+
+    particle.style.setProperty(
+      "--speed",
+      8 + Math.random() * 12 + "s"
+    );
+
+    particle.style.setProperty(
+      "--delay",
+      -Math.random() * 15 + "s"
+    );
+
+    const size =
+      2 + Math.random() * 2;
+
+    particle.style.width = size + "px";
+    particle.style.height = size + "px";
+
+    particles.appendChild(particle);
+
+  }
+
+}
+
+/* ========================================
    MOBILE NAVIGATION
-========================================== */
+======================================== */
 
 const menuBtn =
   document.getElementById("menuBtn");
@@ -3338,7 +3404,8 @@ menuBtn.addEventListener("click",function() {
              "Open navigation"
   );
 
-  menuBtn.textContent = isOpen ? "✕" : "☰";
+  menuBtn.textContent =
+    isOpen ? "✕" : "☰";
 
 });
 
@@ -3365,9 +3432,9 @@ window.addEventListener("resize",function() {
 
 });
 
-/* ==========================================
+/* ========================================
    PROFILE IMAGE FALLBACK
-========================================== */
+======================================== */
 
 const profileImage =
   document.getElementById("profileImage");
@@ -3397,17 +3464,12 @@ if (
 
 }
 
-/* ==========================================
-   SMOOTH SCROLL REVEAL
-========================================== */
-
-const motionPreference =
-  window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-  );
+/* ========================================
+   SCROLL REVEAL ANIMATION
+======================================== */
 
 if (
-  !motionPreference.matches &&
+  !reducedMotion &&
   "IntersectionObserver" in window
 ) {
 
@@ -3432,10 +3494,7 @@ if (
         });
 
       },
-      {
-        threshold: 0.04,
-        rootMargin: "0px 0px 0px 0px"
-      }
+      { threshold:0.04 }
     );
 
   document.querySelectorAll(".reveal")
@@ -3447,10 +3506,10 @@ if (
 
   });
 
-  /* STAGGERED CARD ANIMATIONS */
+  /* Staggered Card Animations */
 
   document.querySelectorAll(
-    ".grid-3, .skills-grid, .stats-grid, .office-grid"
+    ".grid-3,.skills-grid,.stats-grid,.office-grid"
   ).forEach(function(grid) {
 
     Array.from(grid.children)
@@ -3465,7 +3524,7 @@ if (
 
   });
 
-  /* SAFETY FALLBACK */
+  /* Animation Safety Fallback */
 
   window.setTimeout(function() {
 
@@ -3489,9 +3548,9 @@ if (
 
   },1800);
 
-  /* ========================================
+  /* ======================================
      ANIMATED NUMBER COUNTERS
-  ======================================== */
+  ====================================== */
 
   const counterObserver =
     new IntersectionObserver(
@@ -3528,7 +3587,7 @@ if (
             );
 
             const eased =
-              1 - Math.pow(1 - progress,3);
+              1 - Math.pow(1-progress,3);
 
             counter.textContent =
               Math.floor(target * eased);
@@ -3551,14 +3610,12 @@ if (
             animateCount
           );
 
-          counterObserver.unobserve(
-            counter
-          );
+          counterObserver.unobserve(counter);
 
         });
 
       },
-      { threshold: 0.4 }
+      { threshold:0.4 }
     );
 
   document.querySelectorAll("[data-count]")
@@ -3570,9 +3627,9 @@ if (
 
 }
 
-/* ==========================================
-   ACTIVE TAB & SCROLL PROGRESS
-========================================== */
+/* ========================================
+   ACTIVE NAVIGATION & SCROLL PROGRESS
+======================================== */
 
 const navLinks = Array.from(
   document.querySelectorAll(
@@ -3590,7 +3647,7 @@ const pageSections = navLinks
 })
 .filter(Boolean);
 
-const progress =
+const progressBar =
   document.getElementById("progress");
 
 let scrollPending = false;
@@ -3605,12 +3662,12 @@ function updateScroll() {
 
   const ratio = maxScroll > 0
     ? Math.min(
-        Math.max(scrollTop / maxScroll,0),
+        Math.max(scrollTop/maxScroll,0),
         1
       )
     : 0;
 
-  progress.style.transform =
+  progressBar.style.transform =
     "scaleX(" + ratio + ")";
 
   const headerHeight =
@@ -3657,9 +3714,7 @@ function updateScroll() {
 
     } else {
 
-      link.removeAttribute(
-        "aria-current"
-      );
+      link.removeAttribute("aria-current");
 
     }
 
@@ -3694,9 +3749,9 @@ window.addEventListener(
 
 updateScroll();
 
-/* ==========================================
+/* ========================================
    AUTO SELECT SERVICE
-========================================== */
+======================================== */
 
 document.querySelectorAll("[data-service]")
 .forEach(function(link) {
@@ -3710,9 +3765,9 @@ document.querySelectorAll("[data-service]")
 
 });
 
-/* ==========================================
+/* ========================================
    WHATSAPP ENQUIRY FORM
-========================================== */
+======================================== */
 
 document.getElementById("enquiryForm")
 .addEventListener("submit",function(event) {
@@ -3728,16 +3783,13 @@ document.getElementById("enquiryForm")
     .value.trim();
 
   const country =
-    document.getElementById("country")
-    .value;
+    document.getElementById("country").value;
 
   const service =
-    document.getElementById("service")
-    .value;
+    document.getElementById("service").value;
 
   const payment =
-    document.getElementById("payment")
-    .value;
+    document.getElementById("payment").value;
 
   const message =
     document.getElementById("message")
@@ -3759,6 +3811,7 @@ document.getElementById("enquiryForm")
   }
 
   const text =
+
     "Hello Pavi Solutions!\n\n" +
 
     "I would like to enquire about your services.\n\n" +
