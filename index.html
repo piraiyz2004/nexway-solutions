@@ -676,6 +676,769 @@ nav a.active::after {
   color: #c8d8e8;
 }
 
+<!-- ===================================
+     PAVI SOLUTIONS
+     PROJECTS & INTERNATIONAL OFFICES
+=================================== -->
+
+<style>
+
+.pavi-trust-section {
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at top right,
+      #193b60,
+      transparent 50%
+    ),
+    #080d16;
+  border-top: 1px solid #83c8ff25;
+  border-bottom: 1px solid #83c8ff25;
+}
+
+.pavi-trust-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 45px;
+}
+
+.pavi-trust-heading h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  color: #ffffff;
+}
+
+.pavi-trust-heading p {
+  color: #a8b8cb;
+}
+
+/* PROJECT ACHIEVEMENT CARDS */
+
+.pavi-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.pavi-stat-card {
+  position: relative;
+  overflow: hidden;
+  padding: 35px 25px;
+  border-radius: 22px;
+  border: 1px solid #83c8ff35;
+  background: linear-gradient(
+    145deg,
+    #192d46,
+    #101a29
+  );
+  text-align: center;
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.pavi-stat-card:hover {
+  transform: translateY(-7px);
+  border-color: #83c8ff;
+  box-shadow: 0 15px 40px #0005;
+}
+
+.pavi-stat-number {
+  display: block;
+  color: #83c8ff;
+  font-size: clamp(45px, 7vw, 75px);
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow: 0 0 25px #83c8ff40;
+}
+
+.pavi-stat-card h3 {
+  font-size: 22px;
+  margin: 12px 0;
+  color: white;
+}
+
+.pavi-stat-card p {
+  font-size: 14px;
+  color: #a8b8cb;
+}
+
+/* PAYMENT ASSURANCE BOX */
+
+.pavi-payment-box {
+  position: relative;
+  overflow: hidden;
+  padding: 45px;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 28px;
+  border: 1px solid #83c8ff60;
+  background: linear-gradient(
+    135deg,
+    #193451,
+    #101b2b,
+    #0b1421
+  );
+  box-shadow: 0 20px 70px #0005;
+}
+
+/* ANIMATED SHINE EFFECT */
+
+.pavi-payment-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #83c8ff,
+    transparent
+  );
+  animation: paviShine 5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes paviShine {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+.pavi-payment-title {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.pavi-shield {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 22px;
+  background: #83c8ff15;
+  border: 1px solid #83c8ff50;
+  font-size: 35px;
+  margin-bottom: 20px;
+  animation: paviShieldGlow 3s ease-in-out infinite;
+}
+
+@keyframes paviShieldGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px #83c8ff15;
+  }
+  50% {
+    box-shadow: 0 0 28px #83c8ff50;
+  }
+}
+
+.pavi-payment-title h2 {
+  color: white;
+  font-size: clamp(30px, 4vw, 45px);
+}
+
+.pavi-payment-headline {
+  color: #83c8ff;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.pavi-payment-title p {
+  color: #b8c8da;
+  font-size: 16px;
+}
+
+/* INTERNATIONAL OFFICE CARDS */
+
+.pavi-office-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.pavi-office-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid #83c8ff35;
+  background: linear-gradient(
+    145deg,
+    #1b3550,
+    #0c1828
+  );
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.pavi-office-card:hover {
+  transform: translateY(-7px);
+  border-color: #83c8ff;
+  box-shadow: 0 15px 35px #83c8ff15;
+}
+
+.pavi-office-flag {
+  display: block;
+  font-size: 65px;
+  margin-bottom: 15px;
+  transition: transform .35s ease;
+}
+
+.pavi-office-card:hover .pavi-office-flag {
+  transform: scale(1.1);
+}
+
+.pavi-office-label {
+  color: #83c8ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pavi-office-card h3 {
+  font-size: 30px;
+  color: white;
+  margin: 12px 0 5px;
+}
+
+.pavi-office-card p {
+  color: #a8b8cb;
+  font-size: 15px;
+}
+
+.pavi-office-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 8px 14px;
+  border-radius: 30px;
+  border: 1px solid #83c8ff30;
+  background: #83c8ff10;
+  color: #83c8ff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.pavi-office-dot {
+  width: 7px;
+  height: 7px;
+  background: #83c8ff;
+  border-radius: 50%;
+}
+
+/* DISCLAIMER */
+
+.pavi-payment-disclaimer {
+  margin-top: 35px;
+  padding: 22px;
+  background: #ffffff06;
+  border: 1px solid #ffffff15;
+  border-radius: 14px;
+}
+
+.pavi-payment-disclaimer h4 {
+  color: #83c8ff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.pavi-payment-disclaimer p {
+  color: #a8b8cb;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* WHATSAPP CTA */
+
+.pavi-payment-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pavi-payment-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: #25d366;
+  color: #072b16;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.pavi-payment-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px #25d36630;
+}
+
+/* SMOOTH ENTRANCE ANIMATION */
+
+.pavi-trust-animate {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease;
+}
+
+.pavi-trust-animate.pavi-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pavi-stat-card.pavi-show:hover,
+.pavi-office-card.pavi-show:hover {
+  transform: translateY(-7px);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+  .pavi-trust-section {
+    padding: 60px 0;
+  }
+
+  .pavi-stats-grid {
+    gap: 12px;
+  }
+
+  .pavi-stat-card {
+    padding: 25px 12px;
+  }
+
+  .pavi-stat-card h3 {
+    font-size: 17px;
+  }
+
+  .pavi-stat-card p {
+    font-size: 12px;
+  }
+
+  .pavi-payment-box {
+    padding: 25px 18px;
+  }
+
+  .pavi-office-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pavi-office-card {
+    padding: 28px 20px;
+  }
+
+  .pavi-office-flag {
+    font-size: 55px;
+  }
+
+}
+
+/* REDUCED MOTION SUPPORT */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .pavi-payment-box::before,
+  .pavi-shield {
+    animation: none !important;
+  }
+
+  .pavi-trust-animate {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .pavi-stat-card,
+  .pavi-office-card,
+  .pavi-office-flag,
+  .pavi-payment-button {
+    transition: none !important;
+  }
+
+}
+
+</style>
+
+<section class="pavi-trust-section"
+         id="achievements">
+
+  <div class="wrap">
+
+    <!-- SECTION HEADING -->
+
+    <div class="pavi-trust-heading">
+
+      <div class="eyebrow">
+        Our Experience & Customer Trust
+      </div>
+
+      <h2>
+        Experience. Trust.
+        <span class="accent">Results.</span>
+      </h2>
+
+      <p>
+        Professional digital solutions with
+        flexible international payment options.
+      </p>
+
+    </div>
+
+    <!-- PROJECTS AND EXPERIENCE -->
+
+    <div class="pavi-stats-grid">
+
+      <article class="pavi-stat-card">
+
+        <span class="pavi-stat-number"
+              data-pavi-count="12">
+          12
+        </span>
+
+        <h3>Projects Worked On</h3>
+
+        <p>
+          Digital Marketing, E-commerce,
+          Branding & Marketplace Management
+        </p>
+
+      </article>
+
+      <article class="pavi-stat-card">
+
+        <span class="pavi-stat-number">
+          <span data-pavi-count="3">3</span>
+          Years
+        </span>
+
+        <h3>Industry Experience</h3>
+
+        <p>
+          Professional Experience in
+          Digital Marketing & E-commerce
+        </p>
+
+      </article>
+
+    </div>
+
+    <!-- PAYMENT ASSURANCE -->
+
+    <div class="pavi-payment-box">
+
+      <div class="pavi-payment-title">
+
+        <div class="pavi-shield">
+          🛡️
+        </div>
+
+        <div class="eyebrow">
+          Secure & Flexible Payment
+        </div>
+
+        <h2>
+          Your Trust.
+          <span class="accent">
+            Our Priority.
+          </span>
+        </h2>
+
+        <div class="pavi-payment-headline">
+
+          Pay at Our UK or Canada Office
+          After Project Completion
+
+        </div>
+
+        <p>
+          If you are based in the United Kingdom
+          or Canada, you can review your completed
+          project and make your payment at our
+          UK or Canada office, under the agreed
+          project and payment terms.
+        </p>
+
+      </div>
+
+      <!-- INTERNATIONAL OFFICES -->
+
+      <div class="pavi-office-grid">
+
+        <!-- UNITED KINGDOM OFFICE -->
+
+        <article class="pavi-office-card">
+
+          <span class="pavi-office-flag">
+            🇬🇧
+          </span>
+
+          <div class="pavi-office-label">
+            United Kingdom Office
+          </div>
+
+          <h3>Stevenage</h3>
+
+          <p>
+            Hertfordshire, United Kingdom
+          </p>
+
+          <div class="pavi-office-status">
+
+            <span class="pavi-office-dot"></span>
+
+            In-Person Payment Available
+            by Appointment
+
+          </div>
+
+        </article>
+
+        <!-- CANADA OFFICE -->
+
+        <article class="pavi-office-card">
+
+          <span class="pavi-office-flag">
+            🇨🇦
+          </span>
+
+          <div class="pavi-office-label">
+            Canada Office
+          </div>
+
+          <h3>Ontario</h3>
+
+          <p>
+            Ontario, Canada
+          </p>
+
+          <div class="pavi-office-status">
+
+            <span class="pavi-office-dot"></span>
+
+            In-Person Payment Available
+            by Appointment
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- PROFESSIONAL DISCLAIMER -->
+
+      <div class="pavi-payment-disclaimer">
+
+        <h4>
+          Payment Terms & Conditions
+        </h4>
+
+        <p>
+          Post-completion payment is available
+          for eligible projects under agreed
+          terms. Project scope, pricing and
+          delivery timelines will be confirmed
+          before work begins. Third-party
+          advertising budgets, platform fees
+          and external service costs may
+          require advance payment. Office
+          visits and in-person payments must
+          be arranged in advance.
+        </p>
+
+      </div>
+
+      <!-- WHATSAPP BUTTON -->
+
+      <div class="pavi-payment-cta">
+
+        <a class="pavi-payment-button"
+           href="https://wa.me/94756272065?text=Hello%20Pavi%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20project%20and%20your%20UK%20or%20Canada%20payment%20options."
+           target="_blank"
+           rel="noopener noreferrer">
+
+          Discuss Your Project on WhatsApp ↗
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ANIMATION SCRIPT -->
+
+<script>
+
+(function () {
+
+  const section =
+    document.getElementById("achievements");
+
+  if (!section) return;
+
+  const reducedMotion =
+    window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+  if (
+    reducedMotion ||
+    !("IntersectionObserver" in window)
+  ) {
+    return;
+  }
+
+  /* SMOOTH SCROLL REVEAL */
+
+  const items = section.querySelectorAll(
+    ".pavi-trust-heading, " +
+    ".pavi-stat-card, " +
+    ".pavi-payment-box, " +
+    ".pavi-office-card"
+  );
+
+  const observer = new IntersectionObserver(
+    function (entries) {
+
+      entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add(
+            "pavi-show"
+          );
+
+          observer.unobserve(
+            entry.target
+          );
+
+        }
+
+      });
+
+    },
+    { threshold: 0.05 }
+  );
+
+  items.forEach(function (item) {
+
+    item.classList.add(
+      "pavi-trust-animate"
+    );
+
+    observer.observe(item);
+
+  });
+
+  /* ANIMATED NUMBER COUNTERS */
+
+  const counters =
+    section.querySelectorAll(
+      "[data-pavi-count]"
+    );
+
+  const countObserver =
+    new IntersectionObserver(
+      function (entries) {
+
+        entries.forEach(function (entry) {
+
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          const counter = entry.target;
+
+          const target = Number(
+            counter.dataset.paviCount
+          );
+
+          const duration = 1200;
+
+          let startTime = null;
+
+          function animateCount(time) {
+
+            if (startTime === null) {
+              startTime = time;
+            }
+
+            const progress = Math.min(
+              (time - startTime) / duration,
+              1
+            );
+
+            const eased =
+              1 - Math.pow(1 - progress, 3);
+
+            counter.textContent =
+              Math.floor(target * eased);
+
+            if (progress < 1) {
+
+              requestAnimationFrame(
+                animateCount
+              );
+
+            } else {
+
+              counter.textContent = target;
+
+            }
+
+          }
+
+          requestAnimationFrame(
+            animateCount
+          );
+
+          countObserver.unobserve(counter);
+
+        });
+
+      },
+      { threshold: 0.4 }
+    );
+
+  counters.forEach(function (counter) {
+
+    countObserver.observe(counter);
+
+  });
+
+})();
+
+</script>
+
+<!-- END PROJECTS & OFFICE SECTION -->
+
 /* ===================================
    PORTFOLIO
 =================================== */
